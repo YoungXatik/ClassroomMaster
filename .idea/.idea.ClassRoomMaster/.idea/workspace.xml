@@ -10,7 +10,51 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="afc61647-1bdc-4a47-b2d3-a8418d0ff555" name="Default Changelist" comment="" />
+    <list default="true" id="afc61647-1bdc-4a47-b2d3-a8418d0ff555" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ClassRoomMaster/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ClassRoomMaster/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ClassRoomMaster/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ClassRoomMaster/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ClassRoomMaster/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ClassRoomMaster/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anims/Cheater.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anims/Cheater.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anims/Cheaters/SittingCheating.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anims/Cheaters/SittingCheating.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anims/Cheating_2.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anims/Cheating_2.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anims/Cheating_3.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anims/Cheating_3.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anims/Cheating_4.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anims/Cheating_4.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anims/SittingIdle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anims/SittingIdle.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anims/Sitting_3.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anims/Sitting_3.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anims/Sitting_4.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anims/Sitting_4.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anims/StandUp.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anims/StandUp.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anims/sitting_2.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anims/sitting_2.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Book B.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Book B.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Book G.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Book G.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Book R.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Book R.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Book Shelf Hight.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Book Shelf Hight.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Book Shelf Low.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Book Shelf Low.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Book Shelf Medium.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Book Shelf Medium.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main Atlas.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main Atlas.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cheaters/Student.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cheaters/Student.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cheaters/StudentsRandomize.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cheaters/StudentsRandomize.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/CameraRotation.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/CameraRotation.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/SwerveInputSystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/SwerveInputSystem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Table.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Table.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Сhair.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Сhair.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recordings/movie_001.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/Recordings/movie_001.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recordings/movie_002.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/Recordings/movie_002.mp4" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,20 +64,22 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Cheaters/StudentsRandomize.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/SwerveInputSystem.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/SwerveInputSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/CameraRotation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/Cheater.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/Randomizer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/Student.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/StudentsRandomize.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/Student.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/CameraRotation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerRaycast.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/PlayerRaycast.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Gun/Bullet.cs" />
       </list>
     </option>
   </component>
@@ -47,6 +93,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -80,6 +127,9 @@
       <workItem from="1652871733103" duration="11507000" />
       <workItem from="1652950615385" duration="9105000" />
       <workItem from="1652966197955" duration="5413000" />
+      <workItem from="1653053899723" duration="2679000" />
+      <workItem from="1653216953373" duration="1637000" />
+      <workItem from="1653300020928" duration="13644000" />
     </task>
     <servers />
   </component>
@@ -104,9 +154,13 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="623" y="223" key="search.everywhere.popup" timestamp="1652877786450">
+    <state x="616" y="238" key="run.anything.popup" timestamp="1653313360312">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="623" y="223" key="search.everywhere.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1652877786450" />
+    <state x="616" y="238" key="run.anything.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1653313360312" />
+    <state x="623" y="223" width="672" height="678" key="search.everywhere.popup" timestamp="1653310736630">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="623" y="223" width="672" height="678" key="search.everywhere.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1653310736630" />
   </component>
 </project>

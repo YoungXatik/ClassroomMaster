@@ -21,10 +21,24 @@ public class Student : MonoBehaviour
     [SerializeField] public GameObject cheatItem1;
     [SerializeField] public GameObject cheatItem2;
     [SerializeField] public GameObject cheatItem3;
+    [SerializeField] public GameObject cheatItem4;
 
+    [Header("Particles")]
+    [SerializeField] private ParticleSystem[] particleSystemsEmojisGood;
+    [SerializeField] private ParticleSystem[] particleSystemsEmojisBad;
+
+
+    private void Awake()
+    {
+        cheatItem1.SetActive(false);
+        cheatItem2.SetActive(false);
+        cheatItem3.SetActive(false);
+        cheatItem4.SetActive(false);
+    }
 
     private void Start()
     {
+
         studentAnimator = GetComponent<Animator>();
         if (stateNumber == 1)
         {
@@ -49,14 +63,55 @@ public class Student : MonoBehaviour
         }
     }
 
-    public void ShowCheatItem()
+    public void ShowCheatItem1()
     {
         cheatItem1.SetActive(true);
     }
 
-    public void HideCheatItem()
+    public void HideCheatItem1()
     {
         cheatItem1.SetActive(false);
+    }
+    
+    public void ShowCheatItem2()
+    {
+        cheatItem2.SetActive(true);
+    }
+
+    public void HideCheatItem2()
+    {
+        cheatItem2.SetActive(false);
+    }
+    
+    public void ShowCheatItem3()
+    {
+        cheatItem3.SetActive(true);
+    }
+
+    public void HideCheatItem3()
+    {
+        cheatItem3.SetActive(false);
+    }
+    
+    public void ShowCheatItem4()
+    {
+        cheatItem4.SetActive(true);
+    }
+
+    public void HideCheatItem4()
+    {
+        cheatItem4.SetActive(false);
+    }
+
+    public void PlayGoodEmojiEffect()
+    {
+        Random random = new Random();
+        particleSystemsEmojisGood[random.Next(0,particleSystemsEmojisGood.Length)].Play();
+    }
+    public void PlayBadEmojiEffect()
+    {
+        Random random = new Random();
+        particleSystemsEmojisBad[random.Next(0,particleSystemsEmojisBad.Length)].Play();
     }
 
     public void YesItsMe()
