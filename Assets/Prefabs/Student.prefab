@@ -1605,7 +1605,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5088069771815245879}
   - component: {fileID: 5088069771815245876}
-  - component: {fileID: 5088069771815245877}
   - component: {fileID: 5088069771815245866}
   m_Layer: 0
   m_Name: Student
@@ -1649,19 +1648,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!65 &5088069771815245877
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5088069771815245867}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1.7969815, z: 1}
-  m_Center: {x: 0, y: 0.8989044, z: 0}
 --- !u!114 &5088069771815245866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1681,10 +1667,18 @@ MonoBehaviour:
   stateNumber: 0
   cheatNumber: 0
   studyNumber: 0
+  timeToStartAnimations: 0
   cheatItem1: {fileID: 6445097122131076619}
   cheatItem2: {fileID: 2850540766343466093}
   cheatItem3: {fileID: 4378414850096745764}
   cheatItem4: {fileID: 1534438320221489285}
+  particleSystemsEmojisGood: []
+  particleSystemsEmojisBad: []
+  leftPoint: {fileID: 0}
+  rightPoint: {fileID: 0}
+  backwardPoint: {fileID: 0}
+  isLeftSideStudent: 0
+  timeToWalking: 0
 --- !u!1 &5088069771894129144
 GameObject:
   m_ObjectHideFlags: 0

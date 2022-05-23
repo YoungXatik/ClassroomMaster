@@ -2,7 +2,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = System.Random;
 
 public class Student : MonoBehaviour
@@ -16,16 +18,28 @@ public class Student : MonoBehaviour
     [SerializeField] public int stateNumber;
     [SerializeField] public int cheatNumber;
     [SerializeField] public int studyNumber;
+    [SerializeField] public int timeToStartAnimations;
 
     [Header("CheatingItemsForDifferentAnims")]
     [SerializeField] public GameObject cheatItem1;
     [SerializeField] public GameObject cheatItem2;
     [SerializeField] public GameObject cheatItem3;
     [SerializeField] public GameObject cheatItem4;
+    [SerializeField] public string cheatType;
+    [SerializeField] public GameObject textPrefab;
 
     [Header("Particles")]
     [SerializeField] private ParticleSystem[] particleSystemsEmojisGood;
     [SerializeField] private ParticleSystem[] particleSystemsEmojisBad;
+
+    [Header("PointToGoOut")] 
+    [SerializeField] private Transform leftPoint;
+
+    [SerializeField] private Transform rightPoint;
+    [SerializeField] private Transform backwardPoint;
+
+    [SerializeField] private bool isLeftSideStudent;
+    [SerializeField] private float timeToWalking;
 
 
     private void Awake()
@@ -40,17 +54,13 @@ public class Student : MonoBehaviour
     {
 
         studentAnimator = GetComponent<Animator>();
-        if (stateNumber == 1)
-        {
-            isCheating = true;
-            Debug.Log("State number = " + stateNumber);
-        }
-        else if(stateNumber == 2)
-        {
-            isCheating = false;
-            Debug.Log("State number = " + stateNumber);
-        }
+        Debug.Log(timeToStartAnimations + "sec to start");
+        Invoke("StartAnimations",timeToStartAnimations);
         
+    }
+
+    public void StartAnimations()
+    {
         if (isCheating)
         {
             studentAnimator.SetBool("Cheating_" + cheatNumber, true);
@@ -66,6 +76,7 @@ public class Student : MonoBehaviour
     public void ShowCheatItem1()
     {
         cheatItem1.SetActive(true);
+        cheatType = "Phone";
     }
 
     public void HideCheatItem1()
@@ -76,6 +87,7 @@ public class Student : MonoBehaviour
     public void ShowCheatItem2()
     {
         cheatItem2.SetActive(true);
+        cheatType = "Cheat sheet";
     }
 
     public void HideCheatItem2()
@@ -86,6 +98,7 @@ public class Student : MonoBehaviour
     public void ShowCheatItem3()
     {
         cheatItem3.SetActive(true);
+        cheatType = "Book";
     }
 
     public void HideCheatItem3()
@@ -96,6 +109,7 @@ public class Student : MonoBehaviour
     public void ShowCheatItem4()
     {
         cheatItem4.SetActive(true);
+        cheatType = "Watches";
     }
 
     public void HideCheatItem4()
@@ -114,8 +128,46 @@ public class Student : MonoBehaviour
         particleSystemsEmojisBad[random.Next(0,particleSystemsEmojisBad.Length)].Play();
     }
 
-    public void YesItsMe()
+    public void BackwardStandUp()
     {
-        Debug.Log("I`m Cheater");
+        gameObject.transform.DOMove(backwardPoint.position, 2f);
+    }
+
+    public void GoOutFromClass()
+    {
+        
+        HideCheatItem1();
+        HideCheatItem2();
+        HideCheatItem3();
+        HideCheatItem4();
+        
+        
+        if (isLeftSideStudent)
+        {
+            gameObject.transform.DOMove(leftPoint.position, timeToWalking);
+            gameObject.transform.DORotate(new Vector3(0, 270, 0), 1f);
+            studentAnimator.SetBool("Walking", true);
+            Destroy(gameObject, timeToWalking);
+        }
+        else
+        {
+            gameObject.transform.DOMove(rightPoint.position, timeToWalking);
+            gameObject.transform.DORotate(new Vector3(0, 90, 0), 1f);
+            studentAnimator.SetBool("Walking", true);
+            Destroy(gameObject, timeToWalking);
+        }
+
+        if (isCheating)
+        {
+            textPrefab.GetComponentInChildren<Text>().text = "You founded cheater with a" + " " + cheatType + "!";
+            var createdText = Instantiate(textPrefab);
+            Destroy(createdText,2f);
+        }
+        else 
+        {
+            textPrefab.GetComponentInChildren<Text>().text = "You pick a wrong student!";
+            var createdText = Instantiate(textPrefab);
+            Destroy(createdText,2f);
+        }
     }
 }

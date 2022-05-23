@@ -12,48 +12,18 @@
   <component name="ChangeListManager">
     <list default="true" id="afc61647-1bdc-4a47-b2d3-a8418d0ff555" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ClassRoomMaster/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ClassRoomMaster/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ClassRoomMaster/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ClassRoomMaster/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ClassRoomMaster/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ClassRoomMaster/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Anims/Cheater.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anims/Cheater.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Anims/Cheaters/SittingCheating.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anims/Cheaters/SittingCheating.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Anims/Cheating_2.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anims/Cheating_2.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Anims/Cheating_3.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anims/Cheating_3.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Anims/Cheating_4.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anims/Cheating_4.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Anims/SittingIdle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anims/SittingIdle.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Anims/Sitting_3.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anims/Sitting_3.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Anims/Sitting_4.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anims/Sitting_4.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Anims/StandUp.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anims/StandUp.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Anims/sitting_2.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anims/sitting_2.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Book B.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Book B.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Book G.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Book G.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Book R.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Book R.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Book Shelf Hight.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Book Shelf Hight.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Book Shelf Low.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Book Shelf Low.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Book Shelf Medium.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Book Shelf Medium.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Main Atlas.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Main Atlas.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Epic Toon FX/Prefabs/Combat/Brawling/Soft/SoftFightAction.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Prefabs/Combat/Brawling/Soft/SoftFightAction.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Student.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Student.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Table (2).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Table (2).prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cheaters/Student.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cheaters/Student.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cheaters/StudentsRandomize.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cheaters/StudentsRandomize.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/CameraRotation.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/CameraRotation.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/SwerveInputSystem.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/SwerveInputSystem.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Table.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Table.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Сhair.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Сhair.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Recordings/movie_001.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/Recordings/movie_001.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Recordings/movie_002.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/Recordings/movie_002.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cheaters/StudentsRandomize.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cheaters/StudentsRandomize.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Gun/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Gun/Bullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Gun/Marker.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Gun/Marker.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,22 +33,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Cheaters/StudentsRandomize.cs" root0="FORCE_HIGHLIGHTING" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/SwerveInputSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/Cheater.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/Randomizer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/StudentsRandomize.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/Student.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/CameraRotation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerRaycast.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/PlayerRaycast.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/StudentsRandomize.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/StudentsManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/Student.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Gun/Bullet.cs" />
       </list>
     </option>
@@ -130,6 +98,7 @@
       <workItem from="1653053899723" duration="2679000" />
       <workItem from="1653216953373" duration="1637000" />
       <workItem from="1653300020928" duration="13644000" />
+      <workItem from="1653333662110" duration="9089000" />
     </task>
     <servers />
   </component>

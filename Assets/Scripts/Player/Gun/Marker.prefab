@@ -112,6 +112,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 100
   rb: {fileID: 359381468663417881}
+  studentsManager: {fileID: 0}
+  hitEffect: {fileID: 129928, guid: 2d18f84774eae954c9002a33c62fbe8b, type: 3}
 --- !u!54 &359381468663417881
 Rigidbody:
   m_ObjectHideFlags: 0
