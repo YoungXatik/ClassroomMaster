@@ -325,6 +325,11 @@
             </e>
           </e>
         </e>
+        <e p="MaterialsAndOther" t="Include">
+          <e p="FadeShader.shader" t="Include" />
+          <e p="FadeShaderRead.shader" t="Include" />
+          <e p="StencilMaskTest.shader" t="Include" />
+        </e>
         <e p="Plugins" t="Include">
           <e p="Demigiant" t="Include">
             <e p="DOTween" t="Include">

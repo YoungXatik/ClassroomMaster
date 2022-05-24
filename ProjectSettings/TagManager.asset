@@ -9,6 +9,7 @@ TagManager:
   - Bee
   - Student
   - ShootButton
+  - TransparentTables
   layers:
   - Default
   - TransparentFX

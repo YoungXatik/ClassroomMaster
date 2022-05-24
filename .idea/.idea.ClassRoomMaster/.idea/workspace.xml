@@ -11,17 +11,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="afc61647-1bdc-4a47-b2d3-a8418d0ff555" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ClassRoomMaster/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ClassRoomMaster/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ClassRoomMaster/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ClassRoomMaster/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ClassRoomMaster/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ClassRoomMaster/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Anims/Cheater.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anims/Cheater.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CameraTexture.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CameraTexture.renderTexture" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BlackLoadingScreen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BlackLoadingScreen.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CameraTexture.renderTexture" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CameraTexture.renderTexture.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ClassRoomProps/Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ClassRoomProps/Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FadeMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FadeMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/JMO Assets/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/TCP2_Demo_BrickWall.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JMO Assets/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Materials/TCP2_Demo_BrickWall.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Material.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Material.mat.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Table (2).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Table (2).prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cheaters/Student.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cheaters/Student.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Gun/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Gun/Bullet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Gun/Marker.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Gun/Marker.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/PlayerCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/PlayerCamera.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/PlayerRaycast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/PlayerRaycast.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WhiteScreen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WhiteScreen.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/rectangle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/rectangle.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/transp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/transp.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +58,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/Student.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/PlayerRaycast.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/PlayerCamera.cs" />
+        <option value="$PROJECT_DIR$/Assets/FadeShader.shader" />
+        <option value="$PROJECT_DIR$/Assets/StencilMaskTest.shader" />
+        <option value="$PROJECT_DIR$/Assets/FadeShaderRead.shader" />
       </list>
     </option>
   </component>
@@ -99,6 +113,8 @@
       <workItem from="1653300020928" duration="13644000" />
       <workItem from="1653333662110" duration="9089000" />
       <workItem from="1653394944510" duration="4583000" />
+      <workItem from="1653403077217" duration="642000" />
+      <workItem from="1653427431559" duration="4262000" />
     </task>
     <servers />
   </component>
