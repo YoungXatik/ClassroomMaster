@@ -21,6 +21,9 @@ public class PlayerCamera : MonoBehaviour
     [SerializeField] public bool isZooming;
     [SerializeField] public LayerMask cheatingLayerMask;
     [SerializeField] public Camera mainCamera;
+    
+    [Header("TestCamera")]
+    [SerializeField] private GameObject testCamera;
 
     private void Start()
     {
@@ -45,8 +48,9 @@ public class PlayerCamera : MonoBehaviour
     {
         if (isOpened == false)
         {
-            cameraAnimator.SetBool("IdleState", false);
-            cameraAnimator.SetBool("OpenCamera", true);
+            //cameraAnimator.SetBool("IdleState", false);
+            //cameraAnimator.SetBool("OpenCamera", true);
+            testCamera.SetActive(true);
             isOpened = true;
             openButton.SetActive(!false);
             closeButton.SetActive(true);
@@ -57,7 +61,8 @@ public class PlayerCamera : MonoBehaviour
     {
         if (isOpened)
         {
-            cameraAnimator.SetBool("OpenCamera", false);
+            //cameraAnimator.SetBool("OpenCamera", false);
+            testCamera.SetActive(false);
             isOpened = false;
             openButton.SetActive(true);
             closeButton.SetActive(false);
@@ -80,12 +85,12 @@ public class PlayerCamera : MonoBehaviour
     public void EnableZoom()
     {
         DOTween.To(x => Camera.main.fieldOfView = x, Camera.main.fieldOfView, zoomOn, 2f);
-        mainCamera.cullingMask += cheatingLayerMask.value;
+        //mainCamera.cullingMask += cheatingLayerMask.value;
     }
 
     public void DisableZoom()
     {
         DOTween.To(x => Camera.main.fieldOfView = x, Camera.main.fieldOfView, zoomOff, 2f);
-        mainCamera.cullingMask -= cheatingLayerMask.value;
+        //mainCamera.cullingMask -= cheatingLayerMask.value;
     }
 }

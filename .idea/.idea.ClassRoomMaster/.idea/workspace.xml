@@ -11,19 +11,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="afc61647-1bdc-4a47-b2d3-a8418d0ff555" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ClassRoomMaster/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ClassRoomMaster/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ClassRoomMaster/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ClassRoomMaster/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Anims/Cheater.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anims/Cheater.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Anims/StandUp.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anims/StandUp.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Epic Toon FX/Prefabs/Combat/Brawling/Soft/SoftFightAction.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Prefabs/Combat/Brawling/Soft/SoftFightAction.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Student.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Student.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CameraTexture.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CameraTexture.renderTexture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Material.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Table (2).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Table (2).prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cheaters/Student.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cheaters/Student.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cheaters/StudentsRandomize.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cheaters/StudentsRandomize.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Gun/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Gun/Bullet.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Gun/Marker.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Gun/Marker.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/PlayerCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/PlayerCamera.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/PlayerRaycast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/PlayerRaycast.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,11 +41,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerRaycast.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/PlayerRaycast.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/StudentsRandomize.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/StudentsManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/Student.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Gun/Bullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/Student.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/PlayerRaycast.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/PlayerCamera.cs" />
       </list>
     </option>
   </component>
@@ -99,6 +98,7 @@
       <workItem from="1653216953373" duration="1637000" />
       <workItem from="1653300020928" duration="13644000" />
       <workItem from="1653333662110" duration="9089000" />
+      <workItem from="1653394944510" duration="4583000" />
     </task>
     <servers />
   </component>

@@ -60,15 +60,12 @@ public class PlayerRaycast : MonoBehaviour
             if (selectionOption.enabled == false)
             {
                 selectionOption.enabled = true;
-                if (playerCamera.isOpened)
-                {
-                    timeBetweenShootCounter += Time.deltaTime;
+                timeBetweenShootCounter += Time.deltaTime;
                     if (timeBetweenShootCounter >= timeBetweenShoot)
                     {
                         shootButton.interactable = true;
                         gunObject.transform.DOMove(endPos.transform.position, timeToChangePos);
                     }
-                }
             }
             _selection = selection;
         }

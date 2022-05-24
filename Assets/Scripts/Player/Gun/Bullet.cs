@@ -35,5 +35,6 @@ public class Bullet : MonoBehaviour
             var hit = Instantiate(hitEffect, gameObject.transform.position,Quaternion.identity);
             Destroy(hit,1.5f);
         }
+        Destroy(gameObject);
     }
 }

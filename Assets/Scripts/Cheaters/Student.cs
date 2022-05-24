@@ -1,4 +1,3 @@
-
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -9,31 +8,34 @@ using Random = System.Random;
 
 public class Student : MonoBehaviour
 {
-    [Header("functional")]
-    [SerializeField] public bool isCheating;
+    [Header("functional")] [SerializeField]
+    public bool isCheating;
+
     [SerializeField] public Animator studentAnimator;
     [SerializeField] public int countOfCheatingAnims;
     [SerializeField] public int countOfStudyAnims;
-    [Header("StateCounters")]
-    [SerializeField] public int stateNumber;
+
+    [Header("StateCounters")] [SerializeField]
+    public int stateNumber;
+
     [SerializeField] public int cheatNumber;
     [SerializeField] public int studyNumber;
     [SerializeField] public int timeToStartAnimations;
 
-    [Header("CheatingItemsForDifferentAnims")]
-    [SerializeField] public GameObject cheatItem1;
+    [Header("CheatingItemsForDifferentAnims")] [SerializeField]
+    public GameObject cheatItem1;
+
     [SerializeField] public GameObject cheatItem2;
     [SerializeField] public GameObject cheatItem3;
     [SerializeField] public GameObject cheatItem4;
     [SerializeField] public string cheatType;
     [SerializeField] public GameObject textPrefab;
 
-    [Header("Particles")]
-    [SerializeField] private ParticleSystem[] particleSystemsEmojisGood;
+    [Header("Particles")] [SerializeField] private ParticleSystem[] particleSystemsEmojisGood;
     [SerializeField] private ParticleSystem[] particleSystemsEmojisBad;
 
-    [Header("PointToGoOut")] 
-    [SerializeField] private Transform leftPoint;
+    [Header("PointToGoOut")] [SerializeField]
+    private Transform leftPoint;
 
     [SerializeField] private Transform rightPoint;
     [SerializeField] private Transform backwardPoint;
@@ -52,11 +54,9 @@ public class Student : MonoBehaviour
 
     private void Start()
     {
-
         studentAnimator = GetComponent<Animator>();
         Debug.Log(timeToStartAnimations + "sec to start");
-        Invoke("StartAnimations",timeToStartAnimations);
-        
+        Invoke("StartAnimations", timeToStartAnimations);
     }
 
     public void StartAnimations()
@@ -83,7 +83,7 @@ public class Student : MonoBehaviour
     {
         cheatItem1.SetActive(false);
     }
-    
+
     public void ShowCheatItem2()
     {
         cheatItem2.SetActive(true);
@@ -94,7 +94,7 @@ public class Student : MonoBehaviour
     {
         cheatItem2.SetActive(false);
     }
-    
+
     public void ShowCheatItem3()
     {
         cheatItem3.SetActive(true);
@@ -105,7 +105,7 @@ public class Student : MonoBehaviour
     {
         cheatItem3.SetActive(false);
     }
-    
+
     public void ShowCheatItem4()
     {
         cheatItem4.SetActive(true);
@@ -120,12 +120,13 @@ public class Student : MonoBehaviour
     public void PlayGoodEmojiEffect()
     {
         Random random = new Random();
-        particleSystemsEmojisGood[random.Next(0,particleSystemsEmojisGood.Length)].Play();
+        particleSystemsEmojisGood[random.Next(0, particleSystemsEmojisGood.Length)].Play();
     }
+
     public void PlayBadEmojiEffect()
     {
         Random random = new Random();
-        particleSystemsEmojisBad[random.Next(0,particleSystemsEmojisBad.Length)].Play();
+        particleSystemsEmojisBad[random.Next(0, particleSystemsEmojisBad.Length)].Play();
     }
 
     public void BackwardStandUp()
@@ -135,13 +136,12 @@ public class Student : MonoBehaviour
 
     public void GoOutFromClass()
     {
-        
         HideCheatItem1();
         HideCheatItem2();
         HideCheatItem3();
         HideCheatItem4();
-        
-        
+
+
         if (isLeftSideStudent)
         {
             gameObject.transform.DOMove(leftPoint.position, timeToWalking);
@@ -161,13 +161,18 @@ public class Student : MonoBehaviour
         {
             textPrefab.GetComponentInChildren<Text>().text = "You founded cheater with a" + " " + cheatType + "!";
             var createdText = Instantiate(textPrefab);
-            Destroy(createdText,2f);
+            Destroy(createdText, 2f);
         }
-        else 
-        {
-            textPrefab.GetComponentInChildren<Text>().text = "You pick a wrong student!";
-            var createdText = Instantiate(textPrefab);
-            Destroy(createdText,2f);
-        }
+    }
+
+    public void SeatDown()
+    {
+        Random random = new Random();
+        studentAnimator.SetBool("Study_" + random.Next(1, countOfStudyAnims + 1), false);
+        studentAnimator.SetBool("Shooted",false);
+        
+        textPrefab.GetComponentInChildren<Text>().text = "You pick a wrong student!";
+        var createdText = Instantiate(textPrefab);
+        Destroy(createdText, 2f);
     }
 }
