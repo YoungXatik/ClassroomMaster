@@ -8,21 +8,25 @@ using UnityEngine.UI;
 public class PlayerRaycast : MonoBehaviour
 {
     private Transform _selection;
-    [SerializeField] private Button shootButton;
+    [SerializeField] public Button shootButton;
 
-    [Header("AimTimings")] 
-    [SerializeField] private float timeBetweenShoot;
-    [SerializeField] private float timeBetweenShootCounter;
-    [SerializeField] private GameObject gunObject;
+    [Header("AimTimings")] [SerializeField]
+    private float timeBetweenShoot;
+    [SerializeField] public float timeBetweenShootCounter;
+    [SerializeField] public GameObject gunObject;
+    
+    [SerializeField] public int countOfMistakes;
+    [SerializeField] public Text countOfMistakesText;
 
-    [Header("PistolTransform")] 
-    [SerializeField] private Transform startPos;
+    [Header("PistolTransform")] [SerializeField]
+    private Transform startPos;
+
     [SerializeField] private Transform endPos;
     [SerializeField] private float timeToChangePos;
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform bulletStartPos;
 
-    [Header("StudentsInfo")] 
+    [Header("StudentsInfo")]
     [SerializeField] public PlayerCamera playerCamera;
 
     private void Awake()
@@ -32,10 +36,17 @@ public class PlayerRaycast : MonoBehaviour
         shootButton.interactable = false;
     }
 
+    private void Start()
+    {
+        countOfMistakes = FindObjectOfType<StudentsManager>().countOfCheatingStudents - 1;
+    }
+
     private void Update()
     {
-        Ray ray = new Ray(transform.position,transform.forward);
-        Debug.DrawRay(transform.position,transform.forward * 100,Color.blue);
+        countOfMistakesText.text = "Total mistakes left :" + " " + countOfMistakes;
+
+        Ray ray = new Ray(transform.position, transform.forward);
+        Debug.DrawRay(transform.position, transform.forward * 100, Color.blue);
         RaycastHit hit;
 
         if (_selection != null)
@@ -50,7 +61,7 @@ public class PlayerRaycast : MonoBehaviour
             gunObject.transform.DOMove(startPos.transform.position, timeToChangePos);
             shootButton.interactable = false;
         }
-        
+
 
         if (Physics.Raycast(ray, out hit))
         {
@@ -61,20 +72,24 @@ public class PlayerRaycast : MonoBehaviour
             {
                 selectionOption.enabled = true;
                 timeBetweenShootCounter += Time.deltaTime;
-                    if (timeBetweenShootCounter >= timeBetweenShoot)
+                if (timeBetweenShootCounter >= timeBetweenShoot)
+                {
+                    if (playerCamera.isOpened == false)
                     {
                         shootButton.interactable = true;
                         gunObject.transform.DOMove(endPos.transform.position, timeToChangePos);
                     }
+                }
             }
             _selection = selection;
         }
-
+        
+        
+        
     }
 
     public void Shoot()
     {
-     var bullet =  Instantiate(bulletPrefab, bulletStartPos.position, bulletStartPos.rotation);
-     
+        var bullet = Instantiate(bulletPrefab, bulletStartPos.position, bulletStartPos.rotation);
     }
 }

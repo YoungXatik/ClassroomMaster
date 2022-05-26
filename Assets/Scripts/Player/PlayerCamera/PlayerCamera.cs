@@ -7,13 +7,12 @@ using UnityEngine;
 public class PlayerCamera : MonoBehaviour
 {
     [Header("Settings")]
-    [SerializeField] private Animator cameraAnimator;
     [SerializeField] public List<Renderer> itemsToChange = new List<Renderer>();
     [SerializeField] private Material changedMaterial;
     [SerializeField] private Material defaultMaterial;
     [SerializeField] public bool isOpened;
-    [SerializeField] private GameObject openButton;
-    [SerializeField] private GameObject closeButton;
+    [SerializeField] public GameObject openButton;
+    [SerializeField] public GameObject closeButton;
     
     [Header("CameraScale")]
     [SerializeField] public float zoomOn;
@@ -27,6 +26,7 @@ public class PlayerCamera : MonoBehaviour
 
     private void Start()
     {
+        testCamera.SetActive(false);
         zoomOff = Camera.main.fieldOfView;
         GameObject[] values = GameObject.FindGameObjectsWithTag("itemToChange");
 
@@ -54,6 +54,7 @@ public class PlayerCamera : MonoBehaviour
             isOpened = true;
             openButton.SetActive(!false);
             closeButton.SetActive(true);
+            DOTween.To(x => Camera.main.fieldOfView = x, Camera.main.fieldOfView, zoomOn, 2f);
         }
     }
 
@@ -66,12 +67,13 @@ public class PlayerCamera : MonoBehaviour
             isOpened = false;
             openButton.SetActive(true);
             closeButton.SetActive(false);
+            DOTween.To(x => Camera.main.fieldOfView = x, Camera.main.fieldOfView, zoomOff, 2f);
         }
     }
 
     public void ToIdleState()
     {
-        cameraAnimator.SetBool("IdleState",true);
+        //cameraAnimator.SetBool("IdleState",true);
     }
 
     public void GetMaterialBack()
