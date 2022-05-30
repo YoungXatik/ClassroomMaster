@@ -5,7 +5,6 @@ using UnityEngine.UI;
 public class Bullet : MonoBehaviour
 {
     [SerializeField] public float speed;
-    [SerializeField] public Rigidbody rb;
     [SerializeField] public StudentsManager studentsManager;
     [SerializeField] public PlayerRaycast player;
     [SerializeField] public GameObject hitEffect;
@@ -30,6 +29,7 @@ public class Bullet : MonoBehaviour
             other.gameObject.GetComponent<Student>().studentAnimator.SetBool("Shooted",true);
             var hit = Instantiate(hitEffect, gameObject.transform.position,Quaternion.identity);
             Destroy(hit,1.5f);
+            studentsManager.ShowHowCheatersNowYouBusted();
             if (studentsManager.currentFoundedCheaters == studentsManager.countOfCheatingStudents)
             {
                 player.shootButton.interactable = false;
@@ -44,7 +44,7 @@ public class Bullet : MonoBehaviour
             other.gameObject.GetComponent<Student>().studentAnimator.SetBool("Shooted",true);
             var hit = Instantiate(hitEffect, gameObject.transform.position,Quaternion.identity);
             Destroy(hit,1.5f);
-            FindObjectOfType<PlayerRaycast>().countOfMistakes -= 1;
+            player.countOfMistakes -= 1;
             if (player.countOfMistakes <= 0)
             {
                 player.shootButton.interactable = false;

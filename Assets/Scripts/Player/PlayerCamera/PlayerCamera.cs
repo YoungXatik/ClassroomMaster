@@ -8,16 +8,16 @@ public class PlayerCamera : MonoBehaviour
 {
     [Header("Settings")]
     [SerializeField] public List<Renderer> itemsToChange = new List<Renderer>();
-    [SerializeField] private Material changedMaterial;
-    [SerializeField] private Material defaultMaterial;
     [SerializeField] public bool isOpened;
     [SerializeField] public GameObject openButton;
     [SerializeField] public GameObject closeButton;
+    [SerializeField] private Transform startCameraPosition;
+    [SerializeField] private Transform finalCameraPosition;
+    [SerializeField] private float timeToChangeCameraState;
     
     [Header("CameraScale")]
     [SerializeField] public float zoomOn;
     [SerializeField] public float zoomOff;
-    [SerializeField] public bool isZooming;
     [SerializeField] public LayerMask cheatingLayerMask;
     [SerializeField] public Camera mainCamera;
     
@@ -36,25 +36,18 @@ public class PlayerCamera : MonoBehaviour
         }
     }
 
-    public void ShowChangedMaterials()
-    {
-        for (int i = 0; i < itemsToChange.Count; i++)
-        {
-            itemsToChange[i].material = changedMaterial;
-        }
-    }
-
     public void OpenCamera()
     {
         if (isOpened == false)
         {
-            //cameraAnimator.SetBool("IdleState", false);
-            //cameraAnimator.SetBool("OpenCamera", true);
             testCamera.SetActive(true);
+            testCamera.transform.DOMove(finalCameraPosition.position, timeToChangeCameraState);
             isOpened = true;
             openButton.SetActive(!false);
             closeButton.SetActive(true);
             DOTween.To(x => Camera.main.fieldOfView = x, Camera.main.fieldOfView, zoomOn, 2f);
+            Camera.main.cullingMask += cheatingLayerMask;
+            EnableZoom();
         }
     }
 
@@ -62,37 +55,24 @@ public class PlayerCamera : MonoBehaviour
     {
         if (isOpened)
         {
-            //cameraAnimator.SetBool("OpenCamera", false);
+            testCamera.transform.DOMove(startCameraPosition.position, timeToChangeCameraState);
             testCamera.SetActive(false);
             isOpened = false;
             openButton.SetActive(true);
             closeButton.SetActive(false);
             DOTween.To(x => Camera.main.fieldOfView = x, Camera.main.fieldOfView, zoomOff, 2f);
-        }
-    }
-
-    public void ToIdleState()
-    {
-        //cameraAnimator.SetBool("IdleState",true);
-    }
-
-    public void GetMaterialBack()
-    {
-        for (int i = 0; i < itemsToChange.Count; i++)
-        {
-            itemsToChange[i].material = defaultMaterial;
+            Camera.main.cullingMask -= cheatingLayerMask;
+            DisableZoom();
         }
     }
 
     public void EnableZoom()
     {
         DOTween.To(x => Camera.main.fieldOfView = x, Camera.main.fieldOfView, zoomOn, 2f);
-        //mainCamera.cullingMask += cheatingLayerMask.value;
     }
 
     public void DisableZoom()
     {
         DOTween.To(x => Camera.main.fieldOfView = x, Camera.main.fieldOfView, zoomOff, 2f);
-        //mainCamera.cullingMask -= cheatingLayerMask.value;
     }
 }

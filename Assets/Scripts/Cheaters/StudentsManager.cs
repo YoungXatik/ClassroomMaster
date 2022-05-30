@@ -1,8 +1,10 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = System.Random;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 public class StudentsManager : MonoBehaviour
 {
@@ -36,16 +38,19 @@ public class StudentsManager : MonoBehaviour
     {
         playerCamera = FindObjectOfType<PlayerCamera>();
         foundedStudents = GameObject.FindGameObjectsWithTag("Student");
+        player = FindObjectOfType<PlayerRaycast>();
 
         for (int i = 0; i < foundedStudents.Length; i++)
         {
             if (foundedStudents[i].GetComponent<Student>().isCheating)
             {
                 cheaters.Add(foundedStudents[i].GetComponent<Student>());
+                countOfCheatingStudents++;
             }
             else
             {
                 students.Add(foundedStudents[i].GetComponent<Student>());
+                countOfDefaultStudents++;
             }
         }
 
@@ -62,13 +67,12 @@ public class StudentsManager : MonoBehaviour
 
     private void Start()
     {
-        countOfCheatingStudents = cheaters.Count;
-        countOfDefaultStudents = students.Count;
+        ShowHowCheatersNowYouBusted();
     }
 
-    private void Update()
+    public void ShowHowCheatersNowYouBusted()
     {
-        cheatersCount.text = "Found cheaters" + ":" + currentFoundedCheaters.ToString() + "/" + countOfCheatingStudents;
+        cheatersCount.text = "Found cheaters" + " " +":" + " " + currentFoundedCheaters + "/" + countOfCheatingStudents;
     }
 
     public void Lose()
@@ -99,6 +103,7 @@ public class StudentsManager : MonoBehaviour
         teacherAnimator.SetBool("Lose",true);
         loseEmotion.Play();
         endGameCamera.transform.DOMove(endCameraPosition.position, 3f);
+        Invoke("RestartCurrentLevel",3f);
     }
 
     public void WinAnimation()
@@ -111,5 +116,16 @@ public class StudentsManager : MonoBehaviour
         teacherAnimator.SetBool("Win",true);
         winEmotion.Play();
         endGameCamera.transform.DOMove(endCameraPosition.position, 3f);
+        Invoke("LoadNextLevel",3f);
+    }
+
+    public void LoadNextLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void RestartCurrentLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

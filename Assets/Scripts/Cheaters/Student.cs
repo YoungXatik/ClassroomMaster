@@ -144,15 +144,15 @@ public class Student : MonoBehaviour
 
         if (isLeftSideStudent)
         {
-            gameObject.transform.DOMove(leftPoint.position, timeToWalking);
-            gameObject.transform.DORotate(new Vector3(0, 270, 0), 1f);
+            gameObject.transform.DOMove(leftPoint.position, timeToWalking).SetEase(Ease.Linear);
+            gameObject.transform.DORotate(new Vector3(0, 270, 0), 0.5f).SetEase(Ease.Linear);
             studentAnimator.SetBool("Walking", true);
             Destroy(gameObject, timeToWalking);
         }
         else
         {
-            gameObject.transform.DOMove(rightPoint.position, timeToWalking);
-            gameObject.transform.DORotate(new Vector3(0, 90, 0), 1f);
+            gameObject.transform.DOMove(rightPoint.position, timeToWalking).SetEase(Ease.Linear);
+            gameObject.transform.DORotate(new Vector3(0, 90, 0), 0.5f).SetEase(Ease.Linear);
             studentAnimator.SetBool("Walking", true);
             Destroy(gameObject, timeToWalking);
         }
