@@ -24,8 +24,11 @@ public class PlayerCamera : MonoBehaviour
     [Header("TestCamera")]
     [SerializeField] private GameObject testCamera;
 
+    [SerializeField] public PlayerRaycast playerRaycast;
+
     private void Start()
     {
+        playerRaycast = FindObjectOfType<PlayerRaycast>();
         testCamera.SetActive(false);
         zoomOff = Camera.main.fieldOfView;
         GameObject[] values = GameObject.FindGameObjectsWithTag("itemToChange");
@@ -48,6 +51,7 @@ public class PlayerCamera : MonoBehaviour
             DOTween.To(x => Camera.main.fieldOfView = x, Camera.main.fieldOfView, zoomOn, 2f);
             Camera.main.cullingMask += cheatingLayerMask;
             EnableZoom();
+            playerRaycast.timeBetweenShootCounter = 0;
         }
     }
 

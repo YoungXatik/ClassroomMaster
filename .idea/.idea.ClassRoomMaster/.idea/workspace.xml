@@ -44,11 +44,11 @@
         <option value="$PROJECT_DIR$/Assets/FadeShader.shader" />
         <option value="$PROJECT_DIR$/Assets/StencilMaskTest.shader" />
         <option value="$PROJECT_DIR$/Assets/FadeShaderRead.shader" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/PlayerRaycast.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/PlayerCamera.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/StudentsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/Student.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/StudentsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Gun/Bullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/PlayerRaycast.cs" />
       </list>
     </option>
   </component>
@@ -106,7 +106,9 @@
       <workItem from="1653511196193" duration="10723000" />
       <workItem from="1653817477439" duration="57000" />
       <workItem from="1653817622469" duration="5332000" />
-      <workItem from="1653911438315" duration="1261000" />
+      <workItem from="1653911438315" duration="1858000" />
+      <workItem from="1654085911896" duration="3605000" />
+      <workItem from="1654170553354" duration="7788000" />
     </task>
     <servers />
   </component>
@@ -135,9 +137,9 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="616" y="238" key="run.anything.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1653313360312" />
-    <state x="623" y="223" width="672" height="678" key="search.everywhere.popup" timestamp="1653310736630">
+    <state x="623" y="223" width="672" height="678" key="search.everywhere.popup" timestamp="1654181799472">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="623" y="223" width="672" height="678" key="search.everywhere.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1653310736630" />
+    <state x="623" y="223" width="672" height="678" key="search.everywhere.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1654181799472" />
   </component>
 </project>

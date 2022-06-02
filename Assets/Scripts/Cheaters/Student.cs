@@ -22,14 +22,15 @@ public class Student : MonoBehaviour
     [SerializeField] public int studyNumber;
     [SerializeField] public int timeToStartAnimations;
 
-    [Header("CheatingItemsForDifferentAnims")] [SerializeField]
-    public GameObject cheatItem1;
-
+    [Header("CheatingItemsForDifferentAnims")]
+    [SerializeField] private GameObject cheatItem1;
     [SerializeField] public GameObject cheatItem2;
     [SerializeField] public GameObject cheatItem3;
     [SerializeField] public GameObject cheatItem4;
     [SerializeField] public string cheatType;
     [SerializeField] public GameObject textPrefab;
+    
+    [SerializeField] private GameObject penObject;
 
     [Header("Particles")] [SerializeField] private ParticleSystem[] particleSystemsEmojisGood;
     [SerializeField] private ParticleSystem[] particleSystemsEmojisBad;
@@ -42,6 +43,8 @@ public class Student : MonoBehaviour
 
     [SerializeField] private bool isLeftSideStudent;
     [SerializeField] private float timeToWalking;
+
+    [SerializeField] public GameObject door;
 
 
     private void Awake()
@@ -57,6 +60,7 @@ public class Student : MonoBehaviour
         studentAnimator = GetComponent<Animator>();
         Debug.Log(timeToStartAnimations + "sec to start");
         Invoke("StartAnimations", timeToStartAnimations);
+        penObject.SetActive(false);
     }
 
     public void StartAnimations()
@@ -73,6 +77,11 @@ public class Student : MonoBehaviour
         }
     }
 
+    public void ShowPaperWhileStudentWriting()
+    {
+        penObject.SetActive(true);
+    }
+    
     public void ShowCheatItem1()
     {
         cheatItem1.SetActive(true);
@@ -136,6 +145,8 @@ public class Student : MonoBehaviour
 
     public void GoOutFromClass()
     {
+        door.GetComponent<Animator>().SetBool("Open",true);
+        Invoke("CloseDoor",4f);
         HideCheatItem1();
         HideCheatItem2();
         HideCheatItem3();
@@ -174,5 +185,10 @@ public class Student : MonoBehaviour
         textPrefab.GetComponentInChildren<Text>().text = "You pick a wrong student!";
         var createdText = Instantiate(textPrefab);
         Destroy(createdText, 2f);
+    }
+
+    public void CloseDoor()
+    {
+        door.GetComponent<Animator>().SetBool("Open",false);
     }
 }

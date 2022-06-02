@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1034461752159268744}
   - component: {fileID: 3008354190398233410}
   - component: {fileID: 6048310878984782839}
-  - component: {fileID: 7461520281250089300}
+  - component: {fileID: 1872107143058829160}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -27,13 +27,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3656692284718660247}
-  m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.4757081, y: 1.002, z: -2.5062604}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1034461752159268744
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -95,11 +95,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bba0d11c41799344ba18f0965ec7ebf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
+  speed: 1
   studentsManager: {fileID: 0}
   player: {fileID: 0}
   hitEffect: {fileID: 129928, guid: 2d18f84774eae954c9002a33c62fbe8b, type: 3}
---- !u!136 &7461520281250089300
+--- !u!136 &1872107143058829160
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -109,7 +109,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.18471709
-  m_Height: 0.36943418
-  m_Direction: 1
+  m_Radius: 0.08741532
+  m_Height: 0.36943427
+  m_Direction: 0
   m_Center: {x: 0.0072721615, y: 0, z: 0}

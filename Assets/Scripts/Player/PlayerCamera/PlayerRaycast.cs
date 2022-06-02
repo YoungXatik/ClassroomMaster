@@ -87,9 +87,8 @@ public class PlayerRaycast : MonoBehaviour
         
         
     }
-
     public void Shoot()
     {
-        var bullet = Instantiate(bulletPrefab, bulletStartPos.position, bulletStartPos.rotation);
+        var bullet = Instantiate(bulletPrefab, bulletStartPos.position, transform.rotation);
     }
 }

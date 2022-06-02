@@ -32,6 +32,7 @@ public class StudentsManager : MonoBehaviour
     [SerializeField] private Animator teacherAnimator;
     [SerializeField] private GameObject[] itemsToDeactivate;
     [SerializeField] private ParticleSystem winEmotion;
+    [SerializeField] private ParticleSystem winConfetti1, winConfetti2;
     [SerializeField] private ParticleSystem loseEmotion;
 
     private void Awake()
@@ -65,11 +66,6 @@ public class StudentsManager : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        ShowHowCheatersNowYouBusted();
-    }
-
     public void ShowHowCheatersNowYouBusted()
     {
         cheatersCount.text = "Found cheaters" + " " +":" + " " + currentFoundedCheaters + "/" + countOfCheatingStudents;
@@ -81,7 +77,7 @@ public class StudentsManager : MonoBehaviour
         endGameScreen.GetComponentInChildren<Text>().text = "YOU`VE LOSE";
         var endScreen = Instantiate(endGameScreen);
         Destroy(endScreen,4f);
-        Invoke("LoseAnimation",3f);
+        Invoke("LoseAnimation",3.2f);
     }
 
     public void Win()
@@ -90,7 +86,7 @@ public class StudentsManager : MonoBehaviour
         endGameScreen.GetComponentInChildren<Text>().text = "YOU`VE WIN";
         var endScreen = Instantiate(endGameScreen);
         Destroy(endScreen,4f);
-        Invoke("WinAnimation",3f);
+        Invoke("WinAnimation",3.2f);
     }
 
     public void LoseAnimation()
@@ -115,6 +111,8 @@ public class StudentsManager : MonoBehaviour
         }
         teacherAnimator.SetBool("Win",true);
         winEmotion.Play();
+        winConfetti1.Play();
+        winConfetti2.Play();
         endGameCamera.transform.DOMove(endCameraPosition.position, 3f);
         Invoke("LoadNextLevel",3f);
     }

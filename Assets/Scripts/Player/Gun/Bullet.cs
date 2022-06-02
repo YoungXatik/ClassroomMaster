@@ -1,24 +1,35 @@
 using System;
 using UnityEngine;
 using UnityEngine.UI;
-
+using DG.Tweening;
 public class Bullet : MonoBehaviour
 {
     [SerializeField] public float speed;
     [SerializeField] public StudentsManager studentsManager;
     [SerializeField] public PlayerRaycast player;
     [SerializeField] public GameObject hitEffect;
+    [SerializeField] private Rigidbody rb;
 
     private void Awake()
     {
         studentsManager = FindObjectOfType<StudentsManager>();
         player = FindObjectOfType<PlayerRaycast>();
+        rb = GetComponent<Rigidbody>();
+    }
+
+    private void Start()
+    {
+        Destroy(gameObject, 3f);
     }
 
     private void Update()
     {
-        transform.Translate(Vector3.forward * speed * Time.deltaTime);
-        Destroy(gameObject, 3f);
+        //transform.Translate(Vector3.forward * speed * Time.deltaTime);
+    }
+
+    private void FixedUpdate()
+    {
+        rb.velocity = transform.TransformDirection(Vector3.forward * speed);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -36,7 +47,7 @@ public class Bullet : MonoBehaviour
                 player.playerCamera.openButton.GetComponent<Button>().interactable = false;
                 player.playerCamera.closeButton.GetComponent<Button>().interactable = false;
                 player.timeBetweenShootCounter = 0;
-                studentsManager.Invoke("Win", 2f);
+                studentsManager.Invoke("Win", 2.5f);
             }
         }
         else
@@ -51,7 +62,7 @@ public class Bullet : MonoBehaviour
                 player.playerCamera.openButton.GetComponent<Button>().interactable = false;
                 player.playerCamera.closeButton.GetComponent<Button>().interactable = false;
                 player.timeBetweenShootCounter = 0;
-                studentsManager.Invoke("Lose", 2f);
+                studentsManager.Invoke("Lose", 2.5f);
             }
         }
         Destroy(gameObject);
