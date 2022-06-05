@@ -90,5 +90,6 @@ public class PlayerRaycast : MonoBehaviour
     public void Shoot()
     {
         var bullet = Instantiate(bulletPrefab, bulletStartPos.position, transform.rotation);
+        timeBetweenShootCounter = 0;
     }
 }

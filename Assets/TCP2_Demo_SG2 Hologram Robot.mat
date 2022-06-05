@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: TCP2_Demo_SG2 Hologram Torus
+  m_Name: TCP2_Demo_SG2 Hologram Robot
   m_Shader: {fileID: 4800000, guid: 77301915a8e11d64e9c9078eee018be5, type: 3}
   m_ShaderKeywords: TCP2_NONE _EMISSION
   m_LightmapFlags: 1
@@ -68,7 +68,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ScanlinesTex:
-        m_Texture: {fileID: 2800000, guid: 538ae75b44a7196499bb4ca53a8f71e7, type: 3}
+        m_Texture: {fileID: 2800000, guid: d3a84e60412339a45838ef70b6b87839, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -83,10 +83,10 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _MyFloat: 1
-    - _NDVMaxFrag: 1.5
-    - _NDVMinFrag: 1.14
+    - _NDVMaxFrag: 0.6
+    - _NDVMinFrag: 0
     - _OcclusionStrength: 1
-    - _OutlineWidth: 2
+    - _OutlineWidth: 1.82
     - _Parallax: 0.02
     - _RampSmoothing: 0.1
     - _RampThreshold: 0.5
@@ -103,9 +103,9 @@ Material:
     - _EmissionColor: {r: 0, g: 0.3184078, b: 0.50735295, a: 1}
     - _FakeLightDir: {r: 0.85, g: -0.27, b: -0.89, a: 0}
     - _HColor: {r: 0.9852941, g: 0.9852941, b: 0.9852941, a: 1}
-    - _HologramColor: {r: 0, g: 1.3568628, b: 1.8039216, a: 1}
+    - _HologramColor: {r: 0, g: 0.27994177, b: 0.3755316, a: 1}
     - _MainLightDirection: {r: 0, g: 1, b: -1.72, a: 0}
     - _OutlineColorVertex: {r: 0, g: 0.5034485, b: 1, a: 1}
     - _SColor: {r: 0, g: 0, b: 0, a: 1}
-    - _ScanlinesTex_SC: {r: 1, g: 1, b: 0, a: 0}
+    - _ScanlinesTex_SC: {r: 0, g: -0.02, b: 0, a: 0}
   m_BuildTextureStacks: []

@@ -191,4 +191,10 @@ public class Student : MonoBehaviour
     {
         door.GetComponent<Animator>().SetBool("Open",false);
     }
+    
+    [ContextMenu("DebugHitToHead")]
+    private void DebugHitToHead()
+    {
+        studentAnimator.SetTrigger("HitToHead");
+    }
 }

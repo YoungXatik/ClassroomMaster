@@ -68,7 +68,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ScanlinesTex:
-        m_Texture: {fileID: 2800000, guid: 538ae75b44a7196499bb4ca53a8f71e7, type: 3}
+        m_Texture: {fileID: 2800000, guid: d3a84e60412339a45838ef70b6b87839, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -83,8 +83,8 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _MyFloat: 1
-    - _NDVMaxFrag: 1.5
-    - _NDVMinFrag: 1.14
+    - _NDVMaxFrag: 0.45
+    - _NDVMinFrag: 0
     - _OcclusionStrength: 1
     - _OutlineWidth: 2
     - _Parallax: 0.02
@@ -107,5 +107,4 @@ Material:
     - _MainLightDirection: {r: 0, g: 1, b: -1.72, a: 0}
     - _OutlineColorVertex: {r: 0, g: 0.5034485, b: 1, a: 1}
     - _SColor: {r: 0, g: 0, b: 0, a: 1}
-    - _ScanlinesTex_SC: {r: 1, g: 1, b: 0, a: 0}
-  m_BuildTextureStacks: []
+    - _ScanlinesTex_SC: {r: 0, g: -0.02, b: 0, a: 0}

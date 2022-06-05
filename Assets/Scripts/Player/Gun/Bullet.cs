@@ -9,6 +9,8 @@ public class Bullet : MonoBehaviour
     [SerializeField] public PlayerRaycast player;
     [SerializeField] public GameObject hitEffect;
     [SerializeField] private Rigidbody rb;
+    [SerializeField] private GameObject bullet;
+    [SerializeField] private Vector3 rotationAngle;
 
     private void Awake()
     {
@@ -17,9 +19,11 @@ public class Bullet : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
+    
     private void Start()
     {
-        Destroy(gameObject, 3f);
+        //Destroy(gameObject, 3f);
+        //bullet.transform.DORotate(new Vector3(1800f, 0f, 0f), 3f).SetLoops(-1, LoopType.Restart).SetEase(Ease.Linear);
     }
 
     private void Update()
@@ -30,14 +34,18 @@ public class Bullet : MonoBehaviour
     private void FixedUpdate()
     {
         rb.velocity = transform.TransformDirection(Vector3.forward * speed);
+        bullet.transform.Rotate(rotationAngle);
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.GetComponent<Student>().isCheating)
         {
+            Student currentShootedStudent = other.gameObject.GetComponent<Student>();
             studentsManager.currentFoundedCheaters++;
-            other.gameObject.GetComponent<Student>().studentAnimator.SetBool("Shooted",true);
+            currentShootedStudent.studentAnimator.SetBool("Shooted",true);
+            HitToHead(currentShootedStudent);
+            currentShootedStudent.GetComponent<BoxCollider>().enabled = false;
             var hit = Instantiate(hitEffect, gameObject.transform.position,Quaternion.identity);
             Destroy(hit,1.5f);
             studentsManager.ShowHowCheatersNowYouBusted();
@@ -65,6 +73,11 @@ public class Bullet : MonoBehaviour
                 studentsManager.Invoke("Lose", 2.5f);
             }
         }
-        Destroy(gameObject);
+       // Destroy(gameObject);
+    }
+[ContextMenu("TestHit")]
+    public void HitToHead(Student currentStudent)
+    {
+        currentStudent.studentAnimator.SetTrigger("HitToHead");
     }
 }
