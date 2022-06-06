@@ -49,6 +49,8 @@ public class Bullet : MonoBehaviour
             var hit = Instantiate(hitEffect, gameObject.transform.position,Quaternion.identity);
             Destroy(hit,1.5f);
             studentsManager.ShowHowCheatersNowYouBusted();
+            studentsManager.currentNonFoundedCheaters[studentsManager.countOfNonFoundedCheaters - 1].GetComponent<CheaterUICounterNote>().ActivateNoteImage();
+            studentsManager.countOfNonFoundedCheaters--;
             if (studentsManager.currentFoundedCheaters == studentsManager.countOfCheatingStudents)
             {
                 player.shootButton.interactable = false;
@@ -73,7 +75,7 @@ public class Bullet : MonoBehaviour
                 studentsManager.Invoke("Lose", 2.5f);
             }
         }
-       // Destroy(gameObject);
+        Destroy(gameObject);
     }
 [ContextMenu("TestHit")]
     public void HitToHead(Student currentStudent)

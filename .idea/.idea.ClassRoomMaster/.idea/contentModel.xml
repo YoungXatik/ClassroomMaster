@@ -369,6 +369,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="Cheaters" t="Include">
+            <e p="CheaterUICounterNote.cs" t="Include" />
             <e p="Student.cs" t="Include" />
             <e p="StudentsManager.cs" t="Include" />
           </e>

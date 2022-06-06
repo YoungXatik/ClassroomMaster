@@ -35,6 +35,11 @@ public class StudentsManager : MonoBehaviour
     [SerializeField] private ParticleSystem winConfetti1, winConfetti2;
     [SerializeField] private ParticleSystem loseEmotion;
 
+    [SerializeField] public List<GameObject> currentNonFoundedCheaters;
+    [SerializeField] public int countOfNonFoundedCheaters;
+    [SerializeField] private GameObject uiNotePrefab;
+    [SerializeField] private Transform notesLayoutGroup;
+
     private void Awake()
     {
         playerCamera = FindObjectOfType<PlayerCamera>();
@@ -47,6 +52,10 @@ public class StudentsManager : MonoBehaviour
             {
                 cheaters.Add(foundedStudents[i].GetComponent<Student>());
                 countOfCheatingStudents++;
+                var note = Instantiate(uiNotePrefab);
+                note.transform.parent = notesLayoutGroup;
+                currentNonFoundedCheaters.Add(note);
+                countOfNonFoundedCheaters++;
             }
             else
             {

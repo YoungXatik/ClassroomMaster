@@ -30,6 +30,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Cheaters/CheaterUICounterNote.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -45,9 +48,10 @@
         <option value="$PROJECT_DIR$/Assets/StencilMaskTest.shader" />
         <option value="$PROJECT_DIR$/Assets/FadeShaderRead.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/PlayerCamera.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/StudentsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/Student.cs" />
         <option value="$PROJECT_DIR$/Assets/JMO Assets/Toony Colors Pro/Shaders Generated/Examples/SG2/Hologram.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/StudentsManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/CheaterUICounterNote.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/PlayerRaycast.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Gun/Bullet.cs" />
       </list>
@@ -112,6 +116,8 @@
       <workItem from="1654170553354" duration="7788000" />
       <workItem from="1654193588246" duration="2852000" />
       <workItem from="1654263908419" duration="1394000" />
+      <workItem from="1654447437230" duration="1209000" />
+      <workItem from="1654502804936" duration="1895000" />
     </task>
     <servers />
   </component>
