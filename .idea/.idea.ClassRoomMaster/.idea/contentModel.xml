@@ -373,6 +373,7 @@
             <e p="Student.cs" t="Include" />
             <e p="StudentsManager.cs" t="Include" />
           </e>
+          <e p="MainMenuStartGame.cs" t="Include" />
           <e p="Player" t="Include">
             <e p="Gun" t="Include">
               <e p="Bullet.cs" t="Include" />

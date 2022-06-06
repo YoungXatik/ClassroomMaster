@@ -146,7 +146,7 @@ public class Student : MonoBehaviour
     public void GoOutFromClass()
     {
         door.GetComponent<Animator>().SetBool("Open",true);
-        Invoke("CloseDoor",4f);
+        Invoke("CloseDoor",5f);
         HideCheatItem1();
         HideCheatItem2();
         HideCheatItem3();
