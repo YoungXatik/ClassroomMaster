@@ -4777,7 +4777,7 @@ MonoBehaviour:
   hitEffect: {fileID: 129928, guid: 2d18f84774eae954c9002a33c62fbe8b, type: 3}
   rb: {fileID: 6247206904408555122}
   bullet: {fileID: 9177850847270693503}
-  rotationAngle: {x: 10, y: 0, z: 0}
+  rotationAngle: {x: -10, y: 0, z: 0}
 --- !u!54 &6247206904408555122
 Rigidbody:
   m_ObjectHideFlags: 0
