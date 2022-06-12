@@ -84,47 +84,28 @@ public class Student : MonoBehaviour
     
     public void ShowCheatItem1()
     {
-        cheatItem1.SetActive(true);
         cheatType = "Phone";
+        cheatItem1.SetActive(true);
     }
-
-    public void HideCheatItem1()
-    {
-        cheatItem1.SetActive(false);
-    }
-
+    
     public void ShowCheatItem2()
     {
-        cheatItem2.SetActive(true);
         cheatType = "Cheat sheet";
-    }
-
-    public void HideCheatItem2()
-    {
-        cheatItem2.SetActive(false);
+        cheatItem2.SetActive(true);
     }
 
     public void ShowCheatItem3()
     {
-        cheatItem3.SetActive(true);
         cheatType = "Book";
-    }
-
-    public void HideCheatItem3()
-    {
-        cheatItem3.SetActive(false);
+        cheatItem3.SetActive(true);
     }
 
     public void ShowCheatItem4()
     {
-        cheatItem4.SetActive(true);
         cheatType = "Watches";
+        cheatItem4.SetActive(true);
     }
-
-    public void HideCheatItem4()
-    {
-        cheatItem4.SetActive(false);
-    }
+    
 
     public void PlayGoodEmojiEffect()
     {
@@ -147,10 +128,6 @@ public class Student : MonoBehaviour
     {
         door.GetComponent<Animator>().SetBool("Open",true);
         Invoke("CloseDoor",5f);
-        HideCheatItem1();
-        HideCheatItem2();
-        HideCheatItem3();
-        HideCheatItem4();
 
 
         if (isLeftSideStudent)

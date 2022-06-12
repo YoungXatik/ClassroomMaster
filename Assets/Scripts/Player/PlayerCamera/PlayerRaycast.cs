@@ -1,3 +1,4 @@
+
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -9,6 +10,9 @@ public class PlayerRaycast : MonoBehaviour
 {
     private Transform _selection;
     [SerializeField] public Button shootButton;
+    [SerializeField] public Image shootButtonImageBackGround;
+    [SerializeField] public Sprite activeButton;
+    [SerializeField] public Sprite deactivateButton;
 
     [Header("AimTimings")] [SerializeField]
     private float timeBetweenShoot;
@@ -26,7 +30,6 @@ public class PlayerRaycast : MonoBehaviour
     [SerializeField] private float timeToChangePos;
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform bulletStartPos;
-    [SerializeField] private bool forLeshaMarker;
 
     [Header("StudentsInfo")] [SerializeField]
     public PlayerCamera playerCamera;
@@ -41,6 +44,7 @@ public class PlayerRaycast : MonoBehaviour
     private void Start()
     {
         countOfMistakes = FindObjectOfType<StudentsManager>().countOfCheatingStudents - 1;
+        shootButtonImageBackGround.sprite = activeButton;
     }
 
     private void Update()
@@ -63,37 +67,37 @@ public class PlayerRaycast : MonoBehaviour
             gunObject.transform.DOMove(startPos.transform.position, timeToChangePos);
             shootButton.interactable = false;
         }
-
-
-        if(forLeshaMarker)
-        {
-            if (Physics.Raycast(ray, out hit))
+        
+        if (Physics.Raycast(ray, out hit))
             {
                 var selection = hit.transform;
                 var selectionOption = selection.GetComponent<Outline>();
-
-
-                if (selectionOption.enabled == false)
-                {
-                    selectionOption.enabled = true;
-                    timeBetweenShootCounter += Time.deltaTime;
-                    if (timeBetweenShootCounter >= timeBetweenShoot)
+                
+                    if (selectionOption.enabled == false)
                     {
-                        if (playerCamera.isOpened == false)
-                        {
-                            shootButton.interactable = true;
-                            gunObject.transform.DOMove(endPos.transform.position, timeToChangePos);
-                        }
-                    }
-                }
+                        selectionOption.enabled = true;
+                            timeBetweenShootCounter += Time.deltaTime;
+                            if (timeBetweenShootCounter >= timeBetweenShoot)
+                            {
+                                if (playerCamera.isOpened == false)
+                                {
+                                    shootButton.interactable = true;
+                                    gunObject.transform.DOMove(endPos.transform.position, timeToChangePos);
+                                    shootButtonImageBackGround.sprite = deactivateButton;
+                                }
+                            }
+                            else
+                            {
+                                shootButtonImageBackGround.sprite = activeButton;
+                            }
+                    } 
+                
+                
+                
                 _selection = selection;
             }
-        }
-        else
-        {
-            shootButton.interactable = true;
-            gunObject.transform.DOMove(endPos.transform.position, timeToChangePos);
-        }
+        
+        
     }
 
     public void Shoot()

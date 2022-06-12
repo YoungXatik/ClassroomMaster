@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerCamera : MonoBehaviour
 {
@@ -20,6 +21,11 @@ public class PlayerCamera : MonoBehaviour
     [SerializeField] public float zoomOff;
     [SerializeField] public LayerMask cheatingLayerMask;
     [SerializeField] public Camera mainCamera;
+
+    [Header("ButtonsActive")] 
+    [SerializeField] private Image cameraButton;
+    [SerializeField] private Sprite closedButtonSprite;
+    [SerializeField] private Sprite openButtonSprite;
     
     [Header("TestCamera")]
     [SerializeField] private GameObject testCamera;
@@ -52,6 +58,7 @@ public class PlayerCamera : MonoBehaviour
             Camera.main.cullingMask += cheatingLayerMask;
             EnableZoom();
             playerRaycast.timeBetweenShootCounter = 0;
+            cameraButton.sprite = closedButtonSprite;
         }
     }
 
@@ -67,6 +74,7 @@ public class PlayerCamera : MonoBehaviour
             DOTween.To(x => Camera.main.fieldOfView = x, Camera.main.fieldOfView, zoomOff, 2f);
             Camera.main.cullingMask -= cheatingLayerMask;
             DisableZoom();
+            cameraButton.sprite = openButtonSprite;
         }
     }
 

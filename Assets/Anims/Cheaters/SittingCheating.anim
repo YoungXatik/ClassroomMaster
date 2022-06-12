@@ -151096,29 +151096,8 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 3
-    functionName: HideCheatItem1
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 4
-    functionName: ShowCheatItem1
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
   - time: 7.6
     functionName: PlayBadEmojiEffect
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 7.9666667
-    functionName: HideCheatItem1
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
