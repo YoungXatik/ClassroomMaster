@@ -57,7 +57,7 @@ public class PlayerCamera : MonoBehaviour
             DOTween.To(x => Camera.main.fieldOfView = x, Camera.main.fieldOfView, zoomOn, 2f);
             Camera.main.cullingMask += cheatingLayerMask;
             EnableZoom();
-            playerRaycast.timeBetweenShootCounter = 0;
+            //playerRaycast.timeBetweenShootCounter = 0;
             cameraButton.sprite = closedButtonSprite;
         }
     }

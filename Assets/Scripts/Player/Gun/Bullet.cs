@@ -56,12 +56,14 @@ public class Bullet : MonoBehaviour
                 player.shootButton.interactable = false;
                 player.playerCamera.openButton.GetComponent<Button>().interactable = false;
                 player.playerCamera.closeButton.GetComponent<Button>().interactable = false;
-                player.timeBetweenShootCounter = 0;
+                //player.timeBetweenShootCounter = 0;
                 studentsManager.Invoke("Win", 2.5f);
             }
         }
         else
         {
+            Student currentShootedStudent = other.gameObject.GetComponent<Student>();
+            currentShootedStudent.GetComponent<BoxCollider>().enabled = false;
             other.gameObject.GetComponent<Student>().studentAnimator.SetBool("Shooted",true);
             var hit = Instantiate(hitEffect, gameObject.transform.position,Quaternion.identity);
             Destroy(hit,1.5f);
@@ -71,7 +73,7 @@ public class Bullet : MonoBehaviour
                 player.shootButton.interactable = false;
                 player.playerCamera.openButton.GetComponent<Button>().interactable = false;
                 player.playerCamera.closeButton.GetComponent<Button>().interactable = false;
-                player.timeBetweenShootCounter = 0;
+                //player.timeBetweenShootCounter = 0;
                 studentsManager.Invoke("Lose", 2.5f);
             }
         }

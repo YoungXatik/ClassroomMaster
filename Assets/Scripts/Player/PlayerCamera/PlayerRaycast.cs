@@ -10,14 +10,8 @@ public class PlayerRaycast : MonoBehaviour
 {
     private Transform _selection;
     [SerializeField] public Button shootButton;
-    [SerializeField] public Image shootButtonImageBackGround;
-    [SerializeField] public Sprite activeButton;
-    [SerializeField] public Sprite deactivateButton;
 
-    [Header("AimTimings")] [SerializeField]
-    private float timeBetweenShoot;
-
-    [SerializeField] public float timeBetweenShootCounter;
+    [Header("AimTimings")]
     [SerializeField] public GameObject gunObject;
 
     [SerializeField] public int countOfMistakes;
@@ -38,17 +32,17 @@ public class PlayerRaycast : MonoBehaviour
     {
         shootButton = GameObject.FindGameObjectWithTag("ShootButton").GetComponent<Button>();
         playerCamera = FindObjectOfType<PlayerCamera>();
-        shootButton.interactable = false;
+        //shootButton.interactable = false;
     }
 
     private void Start()
     {
         countOfMistakes = FindObjectOfType<StudentsManager>().countOfCheatingStudents - 1;
-        shootButtonImageBackGround.sprite = activeButton;
     }
 
     private void Update()
     {
+        shootButton.interactable = true;
         countOfMistakesText.text = "x" + countOfMistakes;
 
         Ray ray = new Ray(transform.position, transform.forward);
@@ -63,9 +57,8 @@ public class PlayerRaycast : MonoBehaviour
         }
         else
         {
-            timeBetweenShootCounter = 0;
             gunObject.transform.DOMove(startPos.transform.position, timeToChangePos);
-            shootButton.interactable = false;
+            //shootButton.interactable = false;
         }
         
         if (Physics.Raycast(ray, out hit))
@@ -76,25 +69,16 @@ public class PlayerRaycast : MonoBehaviour
                     if (selectionOption.enabled == false)
                     {
                         selectionOption.enabled = true;
-                            timeBetweenShootCounter += Time.deltaTime;
-                            if (timeBetweenShootCounter >= timeBetweenShoot)
+                        /*if (timeBetweenShootCounter >= timeBetweenShoot)
                             {
                                 if (playerCamera.isOpened == false)
                                 {
                                     shootButton.interactable = true;
                                     gunObject.transform.DOMove(endPos.transform.position, timeToChangePos);
-                                    shootButtonImageBackGround.sprite = deactivateButton;
                                 }
-                            }
-                            else
-                            {
-                                shootButtonImageBackGround.sprite = activeButton;
-                            }
-                    } 
-                
-                
-                
-                _selection = selection;
+                            }*/
+                    }
+                    _selection = selection;
             }
         
         
@@ -103,6 +87,5 @@ public class PlayerRaycast : MonoBehaviour
     public void Shoot()
     {
         var bullet = Instantiate(bulletPrefab, bulletStartPos.position, transform.rotation);
-        timeBetweenShootCounter = 0;
     }
 }
