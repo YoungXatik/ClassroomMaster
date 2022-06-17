@@ -78,7 +78,7 @@ public class PlayerRaycast : MonoBehaviour
                         selectionOption.enabled = true;
                     }
 
-                    if (playerCamera.isOpened)
+                    /*if (playerCamera.isOpened)
                     {
                         timeToDetectStudentCounter += Time.deltaTime;
                         if (timeToDetectStudentCounter >= timeToDetectStudent)
@@ -92,14 +92,14 @@ public class PlayerRaycast : MonoBehaviour
                     else
                     {
                         timeToDetectStudentCounter = 0;
-                    }
+                    }*/
 
                     _selection = selection;
             }
         else
         {
             timeToDetectStudentCounter = 0;
-            cameraAudioSource.Stop();
+                //cameraAudioSource.Stop();
 
         }
         
