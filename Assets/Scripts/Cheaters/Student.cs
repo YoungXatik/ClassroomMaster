@@ -46,6 +46,13 @@ public class Student : MonoBehaviour
 
     [SerializeField] public GameObject door;
 
+    [Header("StudentSounds")] 
+    [SerializeField] private AudioSource studentAudioSource;
+    [SerializeField] private AudioClip openDoorClip;
+    [SerializeField] private AudioClip shootedClip;
+    [SerializeField] private AudioClip notificationClip;
+    [SerializeField] private AudioClip emojiClip;
+
 
     private void Awake()
     {
@@ -111,12 +118,14 @@ public class Student : MonoBehaviour
     {
         Random random = new Random();
         particleSystemsEmojisGood[random.Next(0, particleSystemsEmojisGood.Length)].Play();
+        studentAudioSource.PlayOneShot(emojiClip);
     }
 
     public void PlayBadEmojiEffect()
     {
         Random random = new Random();
         particleSystemsEmojisBad[random.Next(0, particleSystemsEmojisBad.Length)].Play();
+        studentAudioSource.PlayOneShot(emojiClip);
     }
 
     public void BackwardStandUp()
@@ -127,6 +136,7 @@ public class Student : MonoBehaviour
     public void GoOutFromClass()
     {
         door.GetComponent<Animator>().SetBool("Open",true);
+        studentAudioSource.PlayOneShot(openDoorClip);
         Invoke("CloseDoor",5f);
 
 
@@ -148,6 +158,7 @@ public class Student : MonoBehaviour
         if (isCheating)
         {
             textPrefab.GetComponentInChildren<Text>().text = "You founded cheater with a" + " " + cheatType + "!";
+            studentAudioSource.PlayOneShot(notificationClip);
             var createdText = Instantiate(textPrefab);
             Destroy(createdText, 2f);
         }
@@ -159,6 +170,7 @@ public class Student : MonoBehaviour
         studentAnimator.SetBool("Study_" + random.Next(1, countOfStudyAnims + 1), false);
         studentAnimator.SetBool("Shooted",false);
         
+        studentAudioSource.PlayOneShot(notificationClip);
         textPrefab.GetComponentInChildren<Text>().text = "You pick a wrong student!";
         var createdText = Instantiate(textPrefab);
         Destroy(createdText, 2f);
@@ -173,5 +185,15 @@ public class Student : MonoBehaviour
     private void DebugHitToHead()
     {
         studentAnimator.SetTrigger("HitToHead");
+    }
+
+    public void PlayShootClip()
+    {
+        studentAudioSource.PlayOneShot(shootedClip);
+    }
+
+    public void StopAudioSource()
+    {
+        //studentAudioSource.Stop();
     }
 }

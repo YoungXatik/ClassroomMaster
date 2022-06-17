@@ -44,6 +44,7 @@ public class Bullet : MonoBehaviour
             Student currentShootedStudent = other.gameObject.GetComponent<Student>();
             studentsManager.currentFoundedCheaters++;
             currentShootedStudent.studentAnimator.SetBool("Shooted",true);
+            currentShootedStudent.PlayShootClip();
             HitToHead(currentShootedStudent);
             currentShootedStudent.GetComponent<BoxCollider>().enabled = false;
             var hit = Instantiate(hitEffect, gameObject.transform.position,Quaternion.identity);
@@ -64,6 +65,7 @@ public class Bullet : MonoBehaviour
         {
             Student currentShootedStudent = other.gameObject.GetComponent<Student>();
             currentShootedStudent.GetComponent<BoxCollider>().enabled = false;
+            currentShootedStudent.PlayShootClip();
             other.gameObject.GetComponent<Student>().studentAnimator.SetBool("Shooted",true);
             var hit = Instantiate(hitEffect, gameObject.transform.position,Quaternion.identity);
             Destroy(hit,1.5f);

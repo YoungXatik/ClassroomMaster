@@ -326,6 +326,7 @@
           </e>
         </e>
         <e p="MaterialsAndOther" t="Include">
+          <e p="CustomFadeShader.shader" t="Include" />
           <e p="FadeShader.shader" t="Include" />
           <e p="FadeShaderRead.shader" t="Include" />
           <e p="StencilMaskTest.shader" t="Include" />
@@ -367,6 +368,7 @@
             <e p="Outline.cs" t="Include" />
           </e>
         </e>
+        <e p="ReadStencilCustum.shader" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Cheaters" t="Include">
             <e p="CheaterUICounterNote.cs" t="Include" />

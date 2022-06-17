@@ -32,6 +32,10 @@ public class PlayerCamera : MonoBehaviour
 
     [SerializeField] public PlayerRaycast playerRaycast;
 
+    [SerializeField] private AudioSource cameraAudioSource;
+    [SerializeField] private AudioClip openClip;
+    [SerializeField] private AudioClip zoomClip;
+
     private void Start()
     {
         playerRaycast = FindObjectOfType<PlayerRaycast>();
@@ -49,6 +53,7 @@ public class PlayerCamera : MonoBehaviour
     {
         if (isOpened == false)
         {
+            cameraAudioSource.PlayOneShot(openClip);
             testCamera.SetActive(true);
             testCamera.transform.DOMove(finalCameraPosition.position, timeToChangeCameraState);
             isOpened = true;
@@ -81,6 +86,7 @@ public class PlayerCamera : MonoBehaviour
     public void EnableZoom()
     {
         DOTween.To(x => Camera.main.fieldOfView = x, Camera.main.fieldOfView, zoomOn, 2f);
+        cameraAudioSource.PlayOneShot(zoomClip);
     }
 
     public void DisableZoom()

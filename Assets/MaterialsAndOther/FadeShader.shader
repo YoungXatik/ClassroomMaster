@@ -1,4 +1,4 @@
-Shader "Stencil/Write"
+Shader "Stencil/Write"    
 {
     Properties
     {

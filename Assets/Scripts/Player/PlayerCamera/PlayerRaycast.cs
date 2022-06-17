@@ -17,6 +17,9 @@ public class PlayerRaycast : MonoBehaviour
     [SerializeField] public int countOfMistakes;
     [SerializeField] public Text countOfMistakesText;
 
+    [SerializeField] private float timeToDetectStudent;
+    [SerializeField] private float timeToDetectStudentCounter;
+
     [Header("PistolTransform")] [SerializeField]
     private Transform startPos;
 
@@ -28,6 +31,10 @@ public class PlayerRaycast : MonoBehaviour
     [Header("StudentsInfo")] [SerializeField]
     public PlayerCamera playerCamera;
 
+    [Header("CameraSounds")] 
+    [SerializeField] private AudioSource cameraAudioSource;
+    [SerializeField] private AudioClip detectedClip;
+    [SerializeField] private AudioClip shootClip;
     private void Awake()
     {
         shootButton = GameObject.FindGameObjectWithTag("ShootButton").GetComponent<Button>();
@@ -58,28 +65,43 @@ public class PlayerRaycast : MonoBehaviour
         else
         {
             gunObject.transform.DOMove(startPos.transform.position, timeToChangePos);
-            //shootButton.interactable = false;
         }
         
         if (Physics.Raycast(ray, out hit))
             {
                 var selection = hit.transform;
                 var selectionOption = selection.GetComponent<Outline>();
+                var selectedStudent = hit.collider.gameObject.GetComponent<Student>();
                 
                     if (selectionOption.enabled == false)
                     {
                         selectionOption.enabled = true;
-                        /*if (timeBetweenShootCounter >= timeBetweenShoot)
-                            {
-                                if (playerCamera.isOpened == false)
-                                {
-                                    shootButton.interactable = true;
-                                    gunObject.transform.DOMove(endPos.transform.position, timeToChangePos);
-                                }
-                            }*/
                     }
+
+                    if (playerCamera.isOpened)
+                    {
+                        timeToDetectStudentCounter += Time.deltaTime;
+                        if (timeToDetectStudentCounter >= timeToDetectStudent)
+                        {
+                            if (selectedStudent.isCheating)
+                            {
+                                cameraAudioSource.PlayOneShot(detectedClip);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        timeToDetectStudentCounter = 0;
+                    }
+
                     _selection = selection;
             }
+        else
+        {
+            timeToDetectStudentCounter = 0;
+            cameraAudioSource.Stop();
+
+        }
         
         
     }
@@ -87,5 +109,6 @@ public class PlayerRaycast : MonoBehaviour
     public void Shoot()
     {
         var bullet = Instantiate(bulletPrefab, bulletStartPos.position, transform.rotation);
+        cameraAudioSource.PlayOneShot(shootClip);
     }
 }
