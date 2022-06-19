@@ -5916,8 +5916,8 @@ MonoBehaviour:
   countOfNonFoundedCheaters: 0
   uiNotePrefab: {fileID: 2074614281810474691, guid: 4087ad86ae7aa9047b5a5735c9cd6490, type: 3}
   notesLayoutGroup: {fileID: 1582601173662156529}
-  minTimeToStart: 3
-  maxTimeToStart: 15
+  minTimeToStart: 1
+  maxTimeToStart: 3
 --- !u!1 &1582601173207026445
 GameObject:
   m_ObjectHideFlags: 0

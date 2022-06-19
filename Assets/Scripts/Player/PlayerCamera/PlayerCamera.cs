@@ -59,7 +59,6 @@ public class PlayerCamera : MonoBehaviour
             isOpened = true;
             openButton.SetActive(!false);
             closeButton.SetActive(true);
-            DOTween.To(x => Camera.main.fieldOfView = x, Camera.main.fieldOfView, zoomOn, 2f);
             Camera.main.cullingMask += cheatingLayerMask;
             EnableZoom();
             //playerRaycast.timeBetweenShootCounter = 0;
@@ -76,7 +75,6 @@ public class PlayerCamera : MonoBehaviour
             isOpened = false;
             openButton.SetActive(true);
             closeButton.SetActive(false);
-            DOTween.To(x => Camera.main.fieldOfView = x, Camera.main.fieldOfView, zoomOff, 2f);
             Camera.main.cullingMask -= cheatingLayerMask;
             DisableZoom();
             cameraButton.sprite = openButtonSprite;
@@ -85,12 +83,12 @@ public class PlayerCamera : MonoBehaviour
 
     public void EnableZoom()
     {
-        DOTween.To(x => Camera.main.fieldOfView = x, Camera.main.fieldOfView, zoomOn, 2f);
+        DOTween.To(x => Camera.main.fieldOfView = x, Camera.main.fieldOfView, zoomOn, 1f);
         cameraAudioSource.PlayOneShot(zoomClip);
     }
 
     public void DisableZoom()
     {
-        DOTween.To(x => Camera.main.fieldOfView = x, Camera.main.fieldOfView, zoomOff, 2f);
+        DOTween.To(x => Camera.main.fieldOfView = x, Camera.main.fieldOfView, zoomOff, 1f);
     }
 }

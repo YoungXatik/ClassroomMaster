@@ -116,16 +116,35 @@ public class Student : MonoBehaviour
 
     public void PlayGoodEmojiEffect()
     {
-        Random random = new Random();
-        particleSystemsEmojisGood[random.Next(0, particleSystemsEmojisGood.Length)].Play();
-        studentAudioSource.PlayOneShot(emojiClip);
+        Random randomState = new Random();
+        var state = randomState.Next(1, 3);
+        if (state == 1)
+        {
+            return;
+        }
+        else
+        {
+            Random random = new Random();
+            particleSystemsEmojisGood[random.Next(0, particleSystemsEmojisGood.Length)].Play();
+            //studentAudioSource.PlayOneShot(emojiClip);  
+        }
+       
     }
 
     public void PlayBadEmojiEffect()
     {
-        Random random = new Random();
-        particleSystemsEmojisBad[random.Next(0, particleSystemsEmojisBad.Length)].Play();
-        studentAudioSource.PlayOneShot(emojiClip);
+        Random randomState = new Random();
+        var state = randomState.Next(1, 3);
+        if (state == 1)
+        {
+            return;
+        }
+        else
+        {
+            Random random = new Random();
+            particleSystemsEmojisBad[random.Next(0, particleSystemsEmojisBad.Length)].Play();
+            //studentAudioSource.PlayOneShot(emojiClip);
+        }
     }
 
     public void BackwardStandUp()

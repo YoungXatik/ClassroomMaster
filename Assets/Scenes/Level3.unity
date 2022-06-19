@@ -538,6 +538,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1582601173092031980, guid: dbba9d7a01dd05940b26a80a357beb2a, type: 3}
+      propertyPath: zoomOn
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 1582601173702104291, guid: dbba9d7a01dd05940b26a80a357beb2a, type: 3}
       propertyPath: m_IsActive
       value: 1
