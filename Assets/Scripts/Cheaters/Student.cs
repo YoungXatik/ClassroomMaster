@@ -27,6 +27,10 @@ public class Student : MonoBehaviour
     [SerializeField] public GameObject cheatItem2;
     [SerializeField] public GameObject cheatItem3;
     [SerializeField] public GameObject cheatItem4;
+    [SerializeField] public GameObject cheatItem5;
+    [SerializeField] public GameObject cheatItem6;
+    [SerializeField] private bool nonLookUpCheatScene;
+    
     [SerializeField] public string cheatType;
     [SerializeField] public GameObject textPrefab;
     
@@ -60,6 +64,8 @@ public class Student : MonoBehaviour
         cheatItem2.SetActive(false);
         cheatItem3.SetActive(false);
         cheatItem4.SetActive(false);
+        cheatItem5.SetActive(false);
+        cheatItem6.SetActive(false);
     }
 
     private void Start()
@@ -74,8 +80,22 @@ public class Student : MonoBehaviour
     {
         if (isCheating)
         {
-            studentAnimator.SetBool("Cheating_" + cheatNumber, true);
-            Debug.Log("Cheating variant is -  " + cheatNumber);
+
+            if (cheatNumber == 7)
+            {
+                if (nonLookUpCheatScene)
+                {
+                    studentAnimator.SetBool("Cheating_" + (cheatNumber - 1), true);
+                    Debug.Log("Cheating variant is -  " + cheatNumber);
+                }
+            }
+            else
+                {
+                    studentAnimator.SetBool("Cheating_" + cheatNumber, true);
+                    Debug.Log("Cheating variant is -  " + cheatNumber);
+                }
+            
+
         }
         else
         {
@@ -111,6 +131,18 @@ public class Student : MonoBehaviour
     {
         cheatType = "Watches";
         cheatItem4.SetActive(true);
+    }
+    
+    public void ShowCheatItem5()
+    {
+        cheatType = "Cheat sheet under the leg";
+        cheatItem5.SetActive(true);
+    }
+    
+    public void ShowCheatItem6()
+    {
+        cheatType = "Cheat sheet on the ceiling";
+        cheatItem6.SetActive(true);
     }
     
 
@@ -150,6 +182,7 @@ public class Student : MonoBehaviour
     public void BackwardStandUp()
     {
         gameObject.transform.DOMove(backwardPoint.position, 2f);
+        HideAllItems();
     }
 
     public void GoOutFromClass()
@@ -205,7 +238,7 @@ public class Student : MonoBehaviour
     {
         studentAnimator.SetTrigger("HitToHead");
     }
-
+    
     public void PlayShootClip()
     {
         studentAudioSource.PlayOneShot(shootedClip);
@@ -214,5 +247,15 @@ public class Student : MonoBehaviour
     public void StopAudioSource()
     {
         //studentAudioSource.Stop();
+    }
+
+    public void HideAllItems()
+    {
+        cheatItem1.SetActive(false);
+        cheatItem2.SetActive(false);
+        cheatItem3.SetActive(false);
+        cheatItem4.SetActive(false);
+        cheatItem5.SetActive(false);
+        cheatItem6.SetActive(false);
     }
 }

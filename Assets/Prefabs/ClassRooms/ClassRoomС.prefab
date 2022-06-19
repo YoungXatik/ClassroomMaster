@@ -121,7 +121,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1578071752711335573}
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -1.171, y: -0.02, z: 3.631}
+  m_LocalPosition: {x: -0.43, y: -0.898, z: 3.631}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 3210014964457245508}
@@ -831,7 +831,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6678187003121454026}
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -1.622, y: -1.077, z: 1.57}
+  m_LocalPosition: {x: -1.053, y: -1.077, z: 1.891}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 3210014964457245508}
@@ -912,7 +912,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7412850757388906637}
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -1.171, y: 0.10800004, z: 3.631}
+  m_LocalPosition: {x: -0.42999995, y: -0.756, z: 3.631}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 3210014964457245508}
@@ -1517,6 +1517,14 @@ PrefabInstance:
       propertyPath: isLeftSideStudent
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1743366073801358769, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
+      propertyPath: nonLookUpCheatScene
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6805169594169286697, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
+      propertyPath: m_WarningMessage
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 9158486845733109002, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
       propertyPath: m_Name
       value: StudentsTable (5)
@@ -1656,6 +1664,14 @@ PrefabInstance:
     - target: {fileID: 1743366073801358769, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
       propertyPath: isCheating
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1743366073801358769, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
+      propertyPath: nonLookUpCheatScene
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6805169594169286697, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
+      propertyPath: m_WarningMessage
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9158486845733109002, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
       propertyPath: m_Name
@@ -2294,6 +2310,14 @@ PrefabInstance:
       propertyPath: isLeftSideStudent
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1743366073801358769, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
+      propertyPath: nonLookUpCheatScene
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6805169594169286697, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
+      propertyPath: m_WarningMessage
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 9158486845733109002, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
       propertyPath: m_Name
       value: StudentsTable (8)
@@ -2360,6 +2384,14 @@ PrefabInstance:
       propertyPath: door
       value: 
       objectReference: {fileID: 1215616747695624886}
+    - target: {fileID: 1743366073801358769, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
+      propertyPath: nonLookUpCheatScene
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6805169594169286697, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
+      propertyPath: m_WarningMessage
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 9158486845733109002, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
       propertyPath: m_Name
       value: StudentsTable (7)
@@ -2499,6 +2531,14 @@ PrefabInstance:
     - target: {fileID: 1743366073801358769, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
       propertyPath: isCheating
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1743366073801358769, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
+      propertyPath: nonLookUpCheatScene
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6805169594169286697, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
+      propertyPath: m_WarningMessage
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9158486845733109002, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
       propertyPath: m_Name
@@ -2860,6 +2900,14 @@ PrefabInstance:
       propertyPath: isLeftSideStudent
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1743366073801358769, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
+      propertyPath: nonLookUpCheatScene
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6805169594169286697, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
+      propertyPath: m_WarningMessage
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 9158486845733109002, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
       propertyPath: m_Name
       value: StudentsTable (2)
@@ -3070,6 +3118,14 @@ PrefabInstance:
       propertyPath: door
       value: 
       objectReference: {fileID: 920356460247263446}
+    - target: {fileID: 1743366073801358769, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
+      propertyPath: nonLookUpCheatScene
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6805169594169286697, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
+      propertyPath: m_WarningMessage
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 9158486845733109002, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
       propertyPath: m_Name
       value: StudentsTable
@@ -4516,6 +4572,14 @@ PrefabInstance:
       propertyPath: isCheating
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1743366073801358769, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
+      propertyPath: nonLookUpCheatScene
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6805169594169286697, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
+      propertyPath: m_WarningMessage
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 9158486845733109002, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
       propertyPath: m_Name
       value: StudentsTable (3)
@@ -4581,6 +4645,14 @@ PrefabInstance:
     - target: {fileID: 1743366073801358769, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
       propertyPath: isCheating
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1743366073801358769, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
+      propertyPath: nonLookUpCheatScene
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6805169594169286697, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
+      propertyPath: m_WarningMessage
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9158486845733109002, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
       propertyPath: m_Name
