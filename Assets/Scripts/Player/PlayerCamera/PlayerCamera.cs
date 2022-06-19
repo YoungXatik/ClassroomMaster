@@ -15,6 +15,7 @@ public class PlayerCamera : MonoBehaviour
     [SerializeField] private Transform startCameraPosition;
     [SerializeField] private Transform finalCameraPosition;
     [SerializeField] private float timeToChangeCameraState;
+    [SerializeField] private Animator cameraAnim;
     
     [Header("CameraScale")]
     [SerializeField] public float zoomOn;
@@ -55,7 +56,8 @@ public class PlayerCamera : MonoBehaviour
         {
             cameraAudioSource.PlayOneShot(openClip);
             testCamera.SetActive(true);
-            testCamera.transform.DOMove(finalCameraPosition.position, timeToChangeCameraState);
+            //testCamera.transform.DOMove(finalCameraPosition.position, timeToChangeCameraState);
+            cameraAnim.SetBool("OpenCamera",true);
             isOpened = true;
             openButton.SetActive(!false);
             closeButton.SetActive(true);
@@ -70,8 +72,9 @@ public class PlayerCamera : MonoBehaviour
     {
         if (isOpened)
         {
-            testCamera.transform.DOMove(startCameraPosition.position, timeToChangeCameraState);
-            testCamera.SetActive(false);
+            //testCamera.transform.DOMove(startCameraPosition.position, timeToChangeCameraState);
+            cameraAnim.SetBool("OpenCamera",false);
+           // testCamera.SetActive(false);
             isOpened = false;
             openButton.SetActive(true);
             closeButton.SetActive(false);

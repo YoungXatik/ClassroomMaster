@@ -57,8 +57,8 @@
         <option value="$PROJECT_DIR$/Assets/MaterialsAndOther/FadeShaderRead.shader" />
         <option value="$PROJECT_DIR$/Assets/ReadStencilCustum.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/PlayerRaycast.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/PlayerCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/Student.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/PlayerCamera.cs" />
       </list>
     </option>
   </component>
@@ -130,6 +130,7 @@
       <workItem from="1655452193753" duration="6880000" />
       <workItem from="1655469603519" duration="628000" />
       <workItem from="1655632106538" duration="1796000" />
+      <workItem from="1655638790260" duration="808000" />
     </task>
     <servers />
   </component>

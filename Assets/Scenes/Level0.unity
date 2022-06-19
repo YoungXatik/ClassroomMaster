@@ -699,15 +699,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1582601172106794942, guid: dbba9d7a01dd05940b26a80a357beb2a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.175
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1582601172106794942, guid: dbba9d7a01dd05940b26a80a357beb2a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.217
+      value: -0.63
       objectReference: {fileID: 0}
     - target: {fileID: 1582601172106794942, guid: dbba9d7a01dd05940b26a80a357beb2a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.233
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1582601173000897501, guid: dbba9d7a01dd05940b26a80a357beb2a, type: 3}
       propertyPath: maxTimeToStart
@@ -720,6 +720,10 @@ PrefabInstance:
     - target: {fileID: 1582601173092031980, guid: dbba9d7a01dd05940b26a80a357beb2a, type: 3}
       propertyPath: zoomOn
       value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582601173092031980, guid: dbba9d7a01dd05940b26a80a357beb2a, type: 3}
+      propertyPath: timeToChangeCameraState
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 1582601173702104291, guid: dbba9d7a01dd05940b26a80a357beb2a, type: 3}
       propertyPath: m_IsActive
