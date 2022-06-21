@@ -72,8 +72,8 @@ public class StudentsManager : MonoBehaviour
         for (int i = 0; i < students.Count; i++)
         {
             //students[i].stateNumber = random.Next(1, 3);
-            //cheaters[i].cheatNumber = random.Next(1, cheaters[i].countOfCheatingAnims + 1);
-            cheaters[i].cheatNumber = random.Next(9, 11);
+            cheaters[i].cheatNumber = random.Next(1, cheaters[i].countOfCheatingAnims + 1);
+           
             students[i].studyNumber = random.Next(1, students[i].countOfStudyAnims + 1);
             cheaters[i].timeToStartAnimations = random.Next(minTimeToStart, maxTimeToStart);
             students[i].timeToStartAnimations = random.Next(minTimeToStart, maxTimeToStart);
