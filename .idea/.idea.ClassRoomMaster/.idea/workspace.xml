@@ -50,15 +50,15 @@
         <option value="$PROJECT_DIR$/Assets/FadeShaderRead.shader" />
         <option value="$PROJECT_DIR$/Assets/JMO Assets/Toony Colors Pro/Shaders Generated/Examples/SG2/Hologram.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/CheaterUICounterNote.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Gun/Bullet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/StudentsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenuStartGame.cs" />
         <option value="$PROJECT_DIR$/Assets/MaterialsAndOther/FadeShader.shader" />
         <option value="$PROJECT_DIR$/Assets/MaterialsAndOther/FadeShaderRead.shader" />
         <option value="$PROJECT_DIR$/Assets/ReadStencilCustum.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/PlayerRaycast.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/PlayerCamera.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Gun/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/Student.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/StudentsManager.cs" />
       </list>
     </option>
   </component>
@@ -132,6 +132,8 @@
       <workItem from="1655632106538" duration="1796000" />
       <workItem from="1655638790260" duration="808000" />
       <workItem from="1655649506407" duration="3806000" />
+      <workItem from="1655721147951" duration="5282000" />
+      <workItem from="1655824936533" duration="4511000" />
     </task>
     <servers />
   </component>

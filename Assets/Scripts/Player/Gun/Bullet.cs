@@ -43,6 +43,7 @@ public class Bullet : MonoBehaviour
         {
             Student currentShootedStudent = other.gameObject.GetComponent<Student>();
             studentsManager.currentFoundedCheaters++;
+            currentShootedStudent.StopAllCoroutines();
             currentShootedStudent.studentAnimator.SetBool("Shooted",true);
             currentShootedStudent.PlayShootClip();
             HitToHead(currentShootedStudent);

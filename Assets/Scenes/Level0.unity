@@ -1826,6 +1826,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 123864910553623016, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
+      propertyPath: isCheating
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2688582235811730900, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
       propertyPath: m_LocalPosition.z
       value: 23.6
@@ -1898,6 +1902,10 @@ PrefabInstance:
       propertyPath: isCheating
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5053016991257620869, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
+      propertyPath: isCheating
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5678721739146618594, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
@@ -1914,13 +1922,29 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6731021113967812780, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7430240411223505965, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
       propertyPath: door
       value: 
       objectReference: {fileID: 799134410}
     - target: {fileID: 7430240411223505965, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
+      propertyPath: isCheating
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7430240411223505965, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
       propertyPath: isLeftSideStudent
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7430240411223505965, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
+      propertyPath: isThisStudentSeatAtLastTable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7946219929241833764, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
+      propertyPath: isCheating
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1478185751002583870, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
