@@ -55,6 +55,8 @@ public class Bullet : MonoBehaviour
             studentsManager.countOfNonFoundedCheaters--;
             if (studentsManager.currentFoundedCheaters == studentsManager.countOfCheatingStudents)
             {
+                player.cameraButtonBackGround.sprite = player.nonInteractableButtonSprite;
+                player.fButtonBackGround.sprite = player.nonInteractableButtonSprite;
                 player.shootButton.interactable = false;
                 player.playerCamera.openButton.GetComponent<Button>().interactable = false;
                 player.playerCamera.closeButton.GetComponent<Button>().interactable = false;
@@ -73,6 +75,8 @@ public class Bullet : MonoBehaviour
             player.countOfMistakes -= 1;
             if (player.countOfMistakes <= 0)
             {
+                player.cameraButtonBackGround.sprite = player.nonInteractableButtonSprite;
+                player.fButtonBackGround.sprite = player.nonInteractableButtonSprite;
                 player.shootButton.interactable = false;
                 player.playerCamera.openButton.GetComponent<Button>().interactable = false;
                 player.playerCamera.closeButton.GetComponent<Button>().interactable = false;

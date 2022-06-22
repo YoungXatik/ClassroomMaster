@@ -10,6 +10,9 @@ public class PlayerRaycast : MonoBehaviour
 {
     private Transform _selection;
     [SerializeField] public Button shootButton;
+    [SerializeField] public Image cameraButtonBackGround;
+    [SerializeField] public Image fButtonBackGround;
+    [SerializeField] public Sprite nonInteractableButtonSprite;
 
     [Header("AimTimings")]
     [SerializeField] public GameObject gunObject;

@@ -21686,7 +21686,7 @@ MonoBehaviour:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
     m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 21300000, guid: 4577fca5ed64f92468b27de7d4ed03ba, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -21834,6 +21834,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootButton: {fileID: 0}
+  cameraButtonBackGround: {fileID: 8330783931021385995}
+  fButtonBackGround: {fileID: 3773901579375843585}
+  nonInteractableButtonSprite: {fileID: 21300000, guid: 4577fca5ed64f92468b27de7d4ed03ba, type: 3}
   gunObject: {fileID: 4553945471157888111}
   countOfMistakes: 2
   countOfMistakesText: {fileID: 1370502098400715115}
