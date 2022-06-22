@@ -43,6 +43,7 @@ public class StudentsManager : MonoBehaviour
     [Header("StartAnimationsTimings")] 
     [SerializeField] private int minTimeToStart;
     [SerializeField] private int maxTimeToStart;
+    
 
     private void Awake()
     {
@@ -67,14 +68,25 @@ public class StudentsManager : MonoBehaviour
                 countOfDefaultStudents++;
             }
         }
+    }
 
+    private void Start()
+    {
         Random random = new Random();
         for (int i = 0; i < students.Count; i++)
         {
             //students[i].stateNumber = random.Next(1, 3);
-            cheaters[i].cheatNumber = random.Next(1, cheaters[i].countOfCheatingAnims + 1);
-           
-            students[i].studyNumber = random.Next(1, students[i].countOfStudyAnims + 1);
+            //cheaters[i].cheatNumber = random.Next(11,11);
+
+            int randomCheat = random.Next(1, cheaters[i].countOfCheatingAnims + 1);
+            cheaters[i].cheatNumber = randomCheat;
+
+            int randomStudy = random.Next(1, students[i].countOfStudyAnims + 1);
+            students[i].studyNumber = randomStudy;
+            
+           // cheaters[i].cheatNumber = random.Next(1, cheaters[i].countOfCheatingAnims + 1);
+           // students[i].studyNumber = random.Next(1, students[i].countOfStudyAnims + 1);
+
             cheaters[i].timeToStartAnimations = random.Next(minTimeToStart, maxTimeToStart);
             students[i].timeToStartAnimations = random.Next(minTimeToStart, maxTimeToStart);
         }

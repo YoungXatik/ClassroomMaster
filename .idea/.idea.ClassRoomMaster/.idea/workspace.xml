@@ -57,8 +57,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/PlayerRaycast.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/PlayerCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Gun/Bullet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/Student.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/StudentsManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/Student.cs" />
       </list>
     </option>
   </component>
@@ -134,6 +134,7 @@
       <workItem from="1655649506407" duration="3806000" />
       <workItem from="1655721147951" duration="5282000" />
       <workItem from="1655824936533" duration="4511000" />
+      <workItem from="1655891993112" duration="3468000" />
     </task>
     <servers />
   </component>

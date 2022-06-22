@@ -2678,9 +2678,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6805169594169286697, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
       propertyPath: m_WarningMessage
-      value: "\nBinding warning: Some generic clip(s) animate transforms that are
-        already bound by a Humanoid avatar. These transforms can only be changed
-        by Humanoid clips.\n\tTransform 'spine.006'\n\tFrom animation clip 'CheatingWithLookingUp'"
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9158486845733109002, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
       propertyPath: m_Name
@@ -3193,9 +3191,7 @@ PrefabInstance:
       objectReference: {fileID: 8601500278002165502}
     - target: {fileID: 6805169594169286697, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
       propertyPath: m_WarningMessage
-      value: "\nBinding warning: Some generic clip(s) animate transforms that are
-        already bound by a Humanoid avatar. These transforms can only be changed
-        by Humanoid clips.\n\tTransform 'spine.006'\n\tFrom animation clip 'CheatingWithLookingUp'"
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9158486845733109002, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
       propertyPath: m_Name
@@ -4095,9 +4091,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6805169594169286697, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
       propertyPath: m_WarningMessage
-      value: "\nBinding warning: Some generic clip(s) animate transforms that are
-        already bound by a Humanoid avatar. These transforms can only be changed
-        by Humanoid clips.\n\tTransform 'spine.006'\n\tFrom animation clip 'CheatingWithLookingUp'"
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9158486845733109002, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
       propertyPath: m_Name
@@ -4169,11 +4163,13 @@ PrefabInstance:
       propertyPath: isLeftSideStudent
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1743366073801358769, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
+      propertyPath: isThisStudentSeatAtLastTable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6805169594169286697, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
       propertyPath: m_WarningMessage
-      value: "\nBinding warning: Some generic clip(s) animate transforms that are
-        already bound by a Humanoid avatar. These transforms can only be changed
-        by Humanoid clips.\n\tTransform 'spine.006'\n\tFrom animation clip 'CheatingWithLookingUp'"
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9158486845733109002, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
       propertyPath: m_Name
@@ -4379,9 +4375,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6805169594169286697, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
       propertyPath: m_WarningMessage
-      value: "\nBinding warning: Some generic clip(s) animate transforms that are
-        already bound by a Humanoid avatar. These transforms can only be changed
-        by Humanoid clips.\n\tTransform 'spine.006'\n\tFrom animation clip 'CheatingWithLookingUp'"
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9158486845733109002, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
       propertyPath: m_Name
@@ -4881,9 +4875,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6805169594169286697, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
       propertyPath: m_WarningMessage
-      value: "\nBinding warning: Some generic clip(s) animate transforms that are
-        already bound by a Humanoid avatar. These transforms can only be changed
-        by Humanoid clips.\n\tTransform 'spine.006'\n\tFrom animation clip 'CheatingWithLookingUp'"
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9158486845733109002, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
       propertyPath: m_Name
@@ -5087,9 +5079,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6805169594169286697, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
       propertyPath: m_WarningMessage
-      value: "\nBinding warning: Some generic clip(s) animate transforms that are
-        already bound by a Humanoid avatar. These transforms can only be changed
-        by Humanoid clips.\n\tTransform 'spine.006'\n\tFrom animation clip 'CheatingWithLookingUp'"
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9158486845733109002, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
       propertyPath: m_Name
@@ -5433,11 +5423,17 @@ PrefabInstance:
       propertyPath: door
       value: 
       objectReference: {fileID: 7925377534836796489}
+    - target: {fileID: 1743366073801358769, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
+      propertyPath: isThisStudentNotAloneAtTable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1743366073801358769, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
+      propertyPath: isThisStudentSeatAtLastTable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6805169594169286697, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
       propertyPath: m_WarningMessage
-      value: "\nBinding warning: Some generic clip(s) animate transforms that are
-        already bound by a Humanoid avatar. These transforms can only be changed
-        by Humanoid clips.\n\tTransform 'spine.006'\n\tFrom animation clip 'CheatingWithLookingUp'"
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9158486845733109002, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
       propertyPath: m_Name
@@ -5671,11 +5667,17 @@ PrefabInstance:
       propertyPath: backwardPoint
       value: 
       objectReference: {fileID: 1060463412560534593}
+    - target: {fileID: 2617186118426983284, guid: 6d9bfd7486c5c1e45a07ebdfb867a41c, type: 3}
+      propertyPath: isThisStudentNotAloneAtTable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2617186118426983284, guid: 6d9bfd7486c5c1e45a07ebdfb867a41c, type: 3}
+      propertyPath: isThisStudentSeatAtLastTable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7067101561640855276, guid: 6d9bfd7486c5c1e45a07ebdfb867a41c, type: 3}
       propertyPath: m_WarningMessage
-      value: "\nBinding warning: Some generic clip(s) animate transforms that are
-        already bound by a Humanoid avatar. These transforms can only be changed
-        by Humanoid clips.\n\tTransform 'spine.006'\n\tFrom animation clip 'CheatingWithLookingUp'"
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d9bfd7486c5c1e45a07ebdfb867a41c, type: 3}

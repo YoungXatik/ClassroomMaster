@@ -34,6 +34,7 @@ public class Student : MonoBehaviour
     [SerializeField] public GameObject cheatItem5;
     [SerializeField] public GameObject cheatItem6;
     [SerializeField] public GameObject cheatItem7Pen;
+    [SerializeField] public GameObject cheatItem8Calculator;
 
     [SerializeField] public string cheatType;
     [SerializeField] public GameObject textPrefab;
@@ -64,6 +65,7 @@ public class Student : MonoBehaviour
 
     private void Awake()
     {
+
         cheatItem1.SetActive(false);
         cheatItem2.SetActive(false);
         cheatItem3.SetActive(false);
@@ -71,6 +73,7 @@ public class Student : MonoBehaviour
         cheatItem5.SetActive(false);
         cheatItem6.SetActive(false);
         cheatItem7Pen.SetActive(false);
+        cheatItem8Calculator.SetActive(false);
     }
 
     private void Start()
@@ -85,7 +88,15 @@ public class Student : MonoBehaviour
     {
         if (isCheating)
         {
-            if (cheatNumber == 9)
+            Random random = new Random();
+            if (cheatNumber == 0)
+            {
+                
+                cheatNumber = random.Next(1, 5);
+                studentAnimator.SetBool("Cheating_" + cheatNumber, true);
+                Debug.Log("Cheating variant is -  " + cheatNumber);
+            }
+            else if (cheatNumber == 9)
             {
                 StartCoroutine("PlayBackWardCheating");
             }
@@ -125,7 +136,7 @@ public class Student : MonoBehaviour
 
     IEnumerator PlaySideCheating()
     {
-        if (isThisStudentNotAloneAtTable)
+        if (!isThisStudentNotAloneAtTable)
         {
             studentAnimator.SetBool("Cheating_" + (cheatNumber - 2), true);
             Debug.Log("Cheating variant is -  " + (cheatNumber - 2));
@@ -186,6 +197,12 @@ public class Student : MonoBehaviour
         cheatType = "with a cheat pen";
         cheatItem7Pen.SetActive(true);
     }
+
+    public void ShowCheatItem8Calculator()
+    {
+        cheatType = "with a calculator";
+        cheatItem8Calculator.SetActive(true);
+    }
     
 
     public void PlayGoodEmojiEffect()
@@ -224,11 +241,11 @@ public class Student : MonoBehaviour
     public void BackwardStandUp()
     {
         gameObject.transform.DOMove(backwardPoint.position, 2f);
-        HideAllItems();
     }
 
     public void GoOutFromClass()
     {
+        HideAllItems();
         door.GetComponent<Animator>().SetBool("Open",true);
         studentAudioSource.PlayOneShot(openDoorClip);
         Invoke("CloseDoor",5f);
@@ -311,5 +328,6 @@ public class Student : MonoBehaviour
         cheatItem5.SetActive(false);
         cheatItem6.SetActive(false);
         cheatItem7Pen.SetActive(false);
+        cheatItem8Calculator.SetActive(false);
     }
 }

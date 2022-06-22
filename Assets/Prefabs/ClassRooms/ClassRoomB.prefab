@@ -4228,6 +4228,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2683213340671407801}
     m_Modifications:
+    - target: {fileID: 1743366073801358769, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
+      propertyPath: isCheating
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9158486845733109002, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
       propertyPath: m_Name
       value: StudentsTable (1)
@@ -5184,6 +5188,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2683213340671407801}
     m_Modifications:
+    - target: {fileID: 1743366073801358769, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
+      propertyPath: isCheating
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1743366073801358769, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
+      propertyPath: isThisStudentSeatAtLastTable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9158486845733109002, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
       propertyPath: m_Name
       value: StudentsTable (3)
@@ -5444,6 +5456,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2683213340671407801}
     m_Modifications:
+    - target: {fileID: 1743366073801358769, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
+      propertyPath: isCheating
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9158486845733109002, guid: 83d54291ef6e40249b1116d4aae1d0bd, type: 3}
       propertyPath: m_Name
       value: StudentsTable (5)

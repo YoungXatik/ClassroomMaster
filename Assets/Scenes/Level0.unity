@@ -239,7 +239,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4618073752143060014, guid: e31899b3b53c4794a96ac29ee16d8a97, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4749921001419145692, guid: e31899b3b53c4794a96ac29ee16d8a97, type: 3}
       propertyPath: m_Pivot.x
@@ -1924,7 +1924,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6731021113967812780, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7430240411223505965, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
       propertyPath: door
@@ -1940,11 +1940,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7430240411223505965, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
       propertyPath: isThisStudentSeatAtLastTable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7946219929241833764, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
       propertyPath: isCheating
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1478185751002583870, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
