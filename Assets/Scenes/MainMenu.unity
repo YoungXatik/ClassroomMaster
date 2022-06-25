@@ -1177,7 +1177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorWithAnimator: {fileID: 45278089}
-  blackScreenPrefab: {fileID: 6270759915754260024, guid: 1a3b5f3985eec7448aa423f91f23a5ed, type: 3}
+  blackScreenPrefab: {fileID: 2057134338409571727, guid: 559ddeb7af9cf454b81022710c513b58, type: 3}
   pointToGo: {fileID: 368300074}
   otherObjectToDeactivate:
   - {fileID: 1522531882}

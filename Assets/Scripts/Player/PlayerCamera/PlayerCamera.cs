@@ -49,6 +49,7 @@ public class PlayerCamera : MonoBehaviour
             itemsToChange.Add(values[i].GetComponent<Renderer>());
         }
     }
+    
 
     public void OpenCamera()
     {

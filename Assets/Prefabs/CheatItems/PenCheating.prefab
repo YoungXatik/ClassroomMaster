@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 525158379008264560}
   - component: {fileID: 2334815861704984976}
   - component: {fileID: 4632295750556298240}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 2499905520543743487}
   m_LocalRotation: {x: 0.469864, y: -0.0033531855, z: -0.2853592, w: -0.83533627}
   m_LocalPosition: {x: 0.00006600093, y: -0.00047399802, z: 0.0005910004}
-  m_LocalScale: {x: 0.49999997, y: 0.5, z: 0.5000001}
+  m_LocalScale: {x: 0.45, y: 0.45, z: 0.45}
   m_Children: []
   m_Father: {fileID: 6285425538593743879}
   m_RootOrder: 0
@@ -140,7 +140,7 @@ Transform:
   m_GameObject: {fileID: 5405103651114848218}
   m_LocalRotation: {x: 0.469864, y: -0.0033531855, z: -0.2853592, w: -0.83533627}
   m_LocalPosition: {x: 0.00006600093, y: -0.00047399802, z: 0.0005910004}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
+  m_LocalScale: {x: 0.67, y: 0.67, z: 0.67}
   m_Children: []
   m_Father: {fileID: 6285425538593743879}
   m_RootOrder: 1

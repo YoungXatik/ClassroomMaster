@@ -31,6 +31,7 @@ public class StudentsManager : MonoBehaviour
     [SerializeField] private Transform startCameraPos, endCameraPosition;
     [SerializeField] private Animator teacherAnimator;
     [SerializeField] private GameObject[] itemsToDeactivate;
+    [SerializeField] private GameObject[] itemsToActivate;
     [SerializeField] private ParticleSystem winEmotion;
     [SerializeField] private ParticleSystem winConfetti1, winConfetti2;
     [SerializeField] private ParticleSystem loseEmotion;
@@ -40,9 +41,18 @@ public class StudentsManager : MonoBehaviour
     [SerializeField] private GameObject uiNotePrefab;
     [SerializeField] private Transform notesLayoutGroup;
 
+    [SerializeField] private GameObject playerObject;
+    [SerializeField] private Transform startPlayerPos;
+
     [Header("StartAnimationsTimings")] 
     [SerializeField] private int minTimeToStart;
     [SerializeField] private int maxTimeToStart;
+
+    [Header("Audio")]
+    [SerializeField] private AudioSource playerSource;
+
+    [SerializeField] private AudioClip winClip;
+    [SerializeField] private AudioClip loseClip;
     
 
     private void Awake()
@@ -100,56 +110,81 @@ public class StudentsManager : MonoBehaviour
     public void Lose()
     {
         player.gunObject.SetActive(false);
-        endGameScreen.GetComponentInChildren<Text>().text = "YOU`VE LOSE";
-        var endScreen = Instantiate(endGameScreen);
-        Destroy(endScreen,4f);
-        Invoke("LoseAnimation",3.2f);
+        Invoke("LoseAnimation",4.5f);
     }
 
     public void Win()
     {
         player.gunObject.SetActive(false);
-        endGameScreen.GetComponentInChildren<Text>().text = "YOU`VE WIN";
-        var endScreen = Instantiate(endGameScreen);
-        Destroy(endScreen,4f);
-        Invoke("WinAnimation",3.2f);
+        Invoke("WinAnimation",4.5f);
     }
 
     public void LoseAnimation()
     {
+        playerObject.transform.position = startPlayerPos.position;
+        playerObject.transform.rotation = startPlayerPos.rotation;
+        
         endGameCamera.SetActive(true);
         for (int i = 0; i < itemsToDeactivate.Length; i++)
         {
             itemsToDeactivate[i].SetActive(false);
         }
+        for (int i = 0; i < itemsToActivate.Length; i++)
+        {
+            itemsToActivate[i].SetActive(true);
+        }
         teacherAnimator.SetBool("Lose",true);
         loseEmotion.Play();
         endGameCamera.transform.DOMove(endCameraPosition.position, 3f);
+        playerSource.PlayOneShot(loseClip);
         Invoke("RestartCurrentLevel",3f);
     }
 
     public void WinAnimation()
     {
+        playerObject.transform.position = startPlayerPos.position;
+        playerObject.transform.rotation = startPlayerPos.rotation;
+        
         endGameCamera.SetActive(true);
         for (int i = 0; i < itemsToDeactivate.Length; i++)
         {
             itemsToDeactivate[i].SetActive(false);
+        }
+
+        for (int i = 0; i < itemsToActivate.Length; i++)
+        {
+            itemsToActivate[i].SetActive(true);
         }
         teacherAnimator.SetBool("Win",true);
         winEmotion.Play();
         winConfetti1.Play();
         winConfetti2.Play();
         endGameCamera.transform.DOMove(endCameraPosition.position, 3f);
+        playerSource.PlayOneShot(winClip);
         Invoke("LoadNextLevel",3f);
     }
 
     public void LoadNextLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        if (SceneManager.GetActiveScene().buildIndex == 9)
+        {
+            SceneManager.LoadScene(1);
+        }
+        else
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);    
+        }
+        
     }
 
     public void RestartCurrentLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    [ContextMenu("TestWin")]
+    public void TestCamera()
+    {
+        WinAnimation();
     }
 }

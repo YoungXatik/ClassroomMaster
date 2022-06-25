@@ -13,6 +13,7 @@ public class PlayerRaycast : MonoBehaviour
     [SerializeField] public Image cameraButtonBackGround;
     [SerializeField] public Image fButtonBackGround;
     [SerializeField] public Sprite nonInteractableButtonSprite;
+    [SerializeField] public Sprite interactableButtonSprite;
 
     [Header("AimTimings")]
     [SerializeField] public GameObject gunObject;
@@ -55,6 +56,17 @@ public class PlayerRaycast : MonoBehaviour
         shootButton.interactable = true;
         countOfMistakesText.text = "x" + countOfMistakes;
 
+        if (playerCamera.isOpened)
+        {
+            shootButton.interactable = false;
+            fButtonBackGround.sprite = nonInteractableButtonSprite;
+        }
+        else
+        {
+            shootButton.interactable = true;
+            fButtonBackGround.sprite = interactableButtonSprite;
+        }
+        
         Ray ray = new Ray(transform.position, transform.forward);
         Debug.DrawRay(transform.position, transform.forward * 100, Color.blue);
         RaycastHit hit;

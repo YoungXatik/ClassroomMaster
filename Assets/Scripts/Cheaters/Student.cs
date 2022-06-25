@@ -36,6 +36,9 @@ public class Student : MonoBehaviour
     [SerializeField] public GameObject cheatItem7Pen;
     [SerializeField] public GameObject cheatItem8Calculator;
 
+    [SerializeField] private GameObject BackwardLookLine;
+    [SerializeField] private GameObject SideLookLine;
+
     [SerializeField] public string cheatType;
     [SerializeField] public GameObject textPrefab;
     
@@ -82,6 +85,7 @@ public class Student : MonoBehaviour
         Debug.Log(timeToStartAnimations + "sec to start");
         Invoke("StartAnimations", timeToStartAnimations);
         penObject.SetActive(false);
+        SideLookLine.SetActive(false);
     }
 
     public void StartAnimations()
@@ -96,11 +100,14 @@ public class Student : MonoBehaviour
                 studentAnimator.SetBool("Cheating_" + cheatNumber, true);
                 Debug.Log("Cheating variant is -  " + cheatNumber);
             }
-            else if (cheatNumber == 9)
+            else if (cheatNumber == 9 || cheatNumber == 13)
             {
-                StartCoroutine("PlayBackWardCheating");
+                //StartCoroutine("PlayBackWardCheating");
+                cheatNumber = random.Next(1, 5);
+                studentAnimator.SetBool("Cheating_" + cheatNumber, true);
+                Debug.Log("Cheating variant is -  " + cheatNumber);
             }
-            else if(cheatNumber == 10)
+            else if(cheatNumber == 10 || cheatNumber == 12)
             {
                 StartCoroutine("PlaySideCheating");
             }
@@ -113,7 +120,7 @@ public class Student : MonoBehaviour
         else
         {
             studentAnimator.SetBool("Study_" + studyNumber, true);
-            Debug.Log("Study variant is -  " + studyNumber);
+            //Debug.Log("Study variant is -  " + studyNumber);
         }
     }
 
@@ -121,7 +128,7 @@ public class Student : MonoBehaviour
     {
         if (isThisStudentSeatAtLastTable)
         {
-            studentAnimator.SetBool("Cheating_" + (cheatNumber - 1), true);
+            studentAnimator.SetBool("Cheating_" + (cheatNumber - 5), true);
             Debug.Log("Cheating variant is -  " + (cheatNumber - 1));
         }
         else
@@ -138,7 +145,7 @@ public class Student : MonoBehaviour
     {
         if (!isThisStudentNotAloneAtTable)
         {
-            studentAnimator.SetBool("Cheating_" + (cheatNumber - 2), true);
+            studentAnimator.SetBool("Cheating_" + (cheatNumber - 6), true);
             Debug.Log("Cheating variant is -  " + (cheatNumber - 2));
         }
         else
@@ -182,7 +189,7 @@ public class Student : MonoBehaviour
     
     public void ShowCheatItem5()
     {
-        cheatType = "with a Cheat sheet under the leg";
+        cheatType = "with a cheat sheet under the leg";
         cheatItem5.SetActive(true);
     }
     
@@ -202,6 +209,26 @@ public class Student : MonoBehaviour
     {
         cheatType = "with a calculator";
         cheatItem8Calculator.SetActive(true);
+    }
+
+    public void ShowLookLineBackWard()
+    {
+        BackwardLookLine.SetActive(true);
+    }
+
+    public void ShowLookLineSide()
+    {
+        SideLookLine.SetActive(true);
+    }
+
+    public void HideLookLineBackWard()
+    {
+        BackwardLookLine.SetActive(false);
+    }
+
+    public void HideLookLineSide()
+    {
+        SideLookLine.SetActive(false);
     }
     
 
@@ -271,7 +298,7 @@ public class Student : MonoBehaviour
             textPrefab.GetComponentInChildren<Text>().text = "You founded cheater " + " " + cheatType + "!";
             studentAudioSource.PlayOneShot(notificationClip);
             var createdText = Instantiate(textPrefab);
-            Destroy(createdText, 2f);
+            Destroy(createdText, 5f);
         }
     }
 
@@ -284,7 +311,7 @@ public class Student : MonoBehaviour
         studentAudioSource.PlayOneShot(notificationClip);
         textPrefab.GetComponentInChildren<Text>().text = "You pick a wrong student!";
         var createdText = Instantiate(textPrefab);
-        Destroy(createdText, 2f);
+        Destroy(createdText, 5f);
     }
 
     public void CloseDoor()
@@ -329,5 +356,7 @@ public class Student : MonoBehaviour
         cheatItem6.SetActive(false);
         cheatItem7Pen.SetActive(false);
         cheatItem8Calculator.SetActive(false);
+        HideLookLineSide();
+        HideLookLineBackWard();
     }
 }
