@@ -57,6 +57,8 @@ public class StudentsManager : MonoBehaviour
 
     private void Awake()
     {
+       // playerObject = GameObject.FindGameObjectWithTag("Player");
+       // startPlayerPos = playerObject.GetComponent<Transform>();
         playerCamera = FindObjectOfType<PlayerCamera>();
         foundedStudents = GameObject.FindGameObjectsWithTag("Student");
         player = FindObjectOfType<PlayerRaycast>();

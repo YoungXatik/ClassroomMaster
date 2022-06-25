@@ -171,7 +171,7 @@ GameObject:
   - component: {fileID: 7045858142979661732}
   m_Layer: 0
   m_Name: PlayerAsTeacher
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5930,6 +5930,7 @@ MonoBehaviour:
   itemsToDeactivate:
   - {fileID: 1582601174017458379}
   - {fileID: 1582601173702104291}
+  itemsToActivate: []
   winEmotion: {fileID: 1582601173653029900}
   winConfetti1: {fileID: 3660325247479297972}
   winConfetti2: {fileID: 5505445069351280109}
@@ -5938,6 +5939,8 @@ MonoBehaviour:
   countOfNonFoundedCheaters: 0
   uiNotePrefab: {fileID: 2074614281810474691, guid: 4087ad86ae7aa9047b5a5735c9cd6490, type: 3}
   notesLayoutGroup: {fileID: 1582601173662156529}
+  playerObject: {fileID: 48853832550706183}
+  startPlayerPos: {fileID: 857444117891364541}
   minTimeToStart: 2
   maxTimeToStart: 4
   playerSource: {fileID: 8835756483938230203}
