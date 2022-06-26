@@ -15,6 +15,9 @@ public class Student : MonoBehaviour
 
     public bool isThisStudentNotAloneAtTable;
 
+    public bool thisStudentDoNonRandomAnimation;
+    public int numberOfAnimation;
+
     [SerializeField] public Animator studentAnimator;
     [SerializeField] public int countOfCheatingAnims;
     [SerializeField] public int countOfStudyAnims;
@@ -28,13 +31,18 @@ public class Student : MonoBehaviour
 
     [Header("CheatingItemsForDifferentAnims")]
     [SerializeField] private GameObject cheatItem1;
-    [SerializeField] public GameObject cheatItem2;
-    [SerializeField] public GameObject cheatItem3;
-    [SerializeField] public GameObject cheatItem4;
-    [SerializeField] public GameObject cheatItem5;
-    [SerializeField] public GameObject cheatItem6;
-    [SerializeField] public GameObject cheatItem7Pen;
-    [SerializeField] public GameObject cheatItem8Calculator;
+    [SerializeField] private GameObject cheatItem2;
+    [SerializeField] private GameObject cheatItem3;
+    [SerializeField] private GameObject cheatItem4;
+    [SerializeField] private GameObject cheatItem5;
+    [SerializeField] private GameObject cheatItem6;
+    [SerializeField] private GameObject cheatItem7Pen;
+    [SerializeField] private GameObject cheatItem8Calculator;
+    [SerializeField] private GameObject cheatShelf;
+    [SerializeField] private GameObject windowCheat;
+    [SerializeField] private GameObject catBackpack;
+    [SerializeField] private AudioSource catSource;
+    [SerializeField] private AudioClip catClip;
 
     [SerializeField] private GameObject BackwardLookLine;
     [SerializeField] private GameObject SideLookLine;
@@ -77,6 +85,7 @@ public class Student : MonoBehaviour
         cheatItem6.SetActive(false);
         cheatItem7Pen.SetActive(false);
         cheatItem8Calculator.SetActive(false);
+        catBackpack.SetActive(false);
     }
 
     private void Start()
@@ -90,38 +99,47 @@ public class Student : MonoBehaviour
 
     public void StartAnimations()
     {
-        if (isCheating)
+        if (thisStudentDoNonRandomAnimation)
         {
-            Random random = new Random();
-            if (cheatNumber == 0)
-            {
-                
-                cheatNumber = random.Next(1, 5);
-                studentAnimator.SetBool("Cheating_" + cheatNumber, true);
-                Debug.Log("Cheating variant is -  " + cheatNumber);
-            }
-            else if (cheatNumber == 9 || cheatNumber == 13)
-            {
-                //StartCoroutine("PlayBackWardCheating");
-                cheatNumber = random.Next(1, 5);
-                studentAnimator.SetBool("Cheating_" + cheatNumber, true);
-                Debug.Log("Cheating variant is -  " + cheatNumber);
-            }
-            else if(cheatNumber == 10 || cheatNumber == 12)
-            {
-                StartCoroutine("PlaySideCheating");
-            }
-            else
-            {
-                studentAnimator.SetBool("Cheating_" + cheatNumber, true);
-                Debug.Log("Cheating variant is -  " + cheatNumber);
-            }
+            studentAnimator.SetBool("Cheating_" + numberOfAnimation, true);
+            Debug.Log("Cheating variant is -  " + numberOfAnimation + "This non random");
         }
         else
         {
-            studentAnimator.SetBool("Study_" + studyNumber, true);
-            //Debug.Log("Study variant is -  " + studyNumber);
+            if (isCheating)
+            {
+                Random random = new Random();
+                if (cheatNumber == 0)
+                {
+                
+                    cheatNumber = random.Next(1, 5);
+                    studentAnimator.SetBool("Cheating_" + cheatNumber, true);
+                    Debug.Log("Cheating variant is -  " + cheatNumber);
+                }
+                else if (cheatNumber == 9 || cheatNumber == 13)
+                {
+                    //StartCoroutine("PlayBackWardCheating");
+                    cheatNumber = random.Next(1, 5);
+                    studentAnimator.SetBool("Cheating_" + cheatNumber, true);
+                    Debug.Log("Cheating variant is -  " + cheatNumber);
+                }
+                else if(cheatNumber == 10 || cheatNumber == 12)
+                {
+                    StartCoroutine("PlaySideCheating");
+                }
+                else
+                {
+                    studentAnimator.SetBool("Cheating_" + cheatNumber, true);
+                    Debug.Log("Cheating variant is -  " + cheatNumber);
+                }
+            }
+            else
+            {
+                studentAnimator.SetBool("Study_" + studyNumber, true);
+                //Debug.Log("Study variant is -  " + studyNumber);
+            }
         }
+        
     }
 
     IEnumerator PlayBackWardCheating()
@@ -230,7 +248,13 @@ public class Student : MonoBehaviour
     {
         SideLookLine.SetActive(false);
     }
-    
+
+    public void ShowCatInBackpack()
+    {
+        catSource.PlayOneShot(catClip);
+        catBackpack.SetActive(true);
+    }
+
 
     public void PlayGoodEmojiEffect()
     {
@@ -283,6 +307,7 @@ public class Student : MonoBehaviour
             gameObject.transform.DOMove(leftPoint.position, timeToWalking).SetEase(Ease.Linear);
             gameObject.transform.DORotate(new Vector3(0, 270, 0), 0.5f).SetEase(Ease.Linear);
             studentAnimator.SetBool("Walking", true);
+            studentAnimator.SetBool("Cheating_20",false);
             Destroy(gameObject, timeToWalking);
         }
         else
@@ -290,6 +315,7 @@ public class Student : MonoBehaviour
             gameObject.transform.DOMove(rightPoint.position, timeToWalking).SetEase(Ease.Linear);
             gameObject.transform.DORotate(new Vector3(0, 90, 0), 0.5f).SetEase(Ease.Linear);
             studentAnimator.SetBool("Walking", true);
+            studentAnimator.SetBool("Cheating_20",false);
             Destroy(gameObject, timeToWalking);
         }
 
@@ -358,5 +384,8 @@ public class Student : MonoBehaviour
         cheatItem8Calculator.SetActive(false);
         HideLookLineSide();
         HideLookLineBackWard();
+        //cheatShelf.SetActive(false);
+        windowCheat.SetActive(false);
+        catBackpack.SetActive(false);
     }
 }

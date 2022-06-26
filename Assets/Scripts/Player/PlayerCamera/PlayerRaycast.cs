@@ -68,7 +68,13 @@ public class PlayerRaycast : MonoBehaviour
         }
         
         Ray ray = new Ray(transform.position, transform.forward);
+
+#if UNITY_EDITOR
         Debug.DrawRay(transform.position, transform.forward * 100, Color.blue);
+#endif
+        
+        
+        
         RaycastHit hit;
 
         if (_selection != null)

@@ -53,7 +53,10 @@ public class StudentsManager : MonoBehaviour
 
     [SerializeField] private AudioClip winClip;
     [SerializeField] private AudioClip loseClip;
-    
+
+    [Header("ProgressBar")] 
+    [SerializeField] private LevelProgress levelProgressBar;
+
 
     private void Awake()
     {
@@ -144,6 +147,7 @@ public class StudentsManager : MonoBehaviour
 
     public void WinAnimation()
     {
+        levelProgressBar.OpenBar();
         playerObject.transform.position = startPlayerPos.position;
         playerObject.transform.rotation = startPlayerPos.rotation;
         

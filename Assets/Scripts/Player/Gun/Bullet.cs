@@ -46,6 +46,7 @@ public class Bullet : MonoBehaviour
             currentShootedStudent.StopAllCoroutines();
             currentShootedStudent.studentAnimator.SetBool("Shooted",true);
             currentShootedStudent.PlayShootClip();
+            currentShootedStudent.studentAnimator.SetBool("Cheating_20",false);
             HitToHead(currentShootedStudent);
             currentShootedStudent.GetComponent<BoxCollider>().enabled = false;
             var hit = Instantiate(hitEffect, gameObject.transform.position,Quaternion.identity);
@@ -53,6 +54,7 @@ public class Bullet : MonoBehaviour
             studentsManager.ShowHowCheatersNowYouBusted();
             studentsManager.currentNonFoundedCheaters[studentsManager.countOfNonFoundedCheaters - 1].GetComponent<CheaterUICounterNote>().ActivateNoteImage();
             studentsManager.countOfNonFoundedCheaters--;
+            
             if (studentsManager.currentFoundedCheaters == studentsManager.countOfCheatingStudents)
             {
                 player.cameraButtonBackGround.sprite = player.nonInteractableButtonSprite;
