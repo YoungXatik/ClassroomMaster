@@ -5,10 +5,12 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = System.Random;
+using TMPro;
 
 public class Student : MonoBehaviour
 {
-    [Header("functional")] [SerializeField]
+    [Header("functional")]
+    [SerializeField]
     public bool isCheating;
 
     public bool isThisStudentSeatAtLastTable;
@@ -22,7 +24,8 @@ public class Student : MonoBehaviour
     [SerializeField] public int countOfCheatingAnims;
     [SerializeField] public int countOfStudyAnims;
 
-    [Header("StateCounters")] [SerializeField]
+    [Header("StateCounters")]
+    [SerializeField]
     public int stateNumber;
 
     [SerializeField] public int cheatNumber;
@@ -49,13 +52,14 @@ public class Student : MonoBehaviour
 
     [SerializeField] public string cheatType;
     [SerializeField] public GameObject textPrefab;
-    
+
     [SerializeField] private GameObject penObject;
 
-    [Header("Particles")] [SerializeField] private ParticleSystem[] particleSystemsEmojisGood;
+    [Header("Particles")][SerializeField] private ParticleSystem[] particleSystemsEmojisGood;
     [SerializeField] private ParticleSystem[] particleSystemsEmojisBad;
 
-    [Header("PointToGoOut")] [SerializeField]
+    [Header("PointToGoOut")]
+    [SerializeField]
     private Transform leftPoint;
 
     [SerializeField] private Transform rightPoint;
@@ -66,7 +70,7 @@ public class Student : MonoBehaviour
 
     [SerializeField] public GameObject door;
 
-    [Header("StudentSounds")] 
+    [Header("StudentSounds")]
     [SerializeField] private AudioSource studentAudioSource;
     [SerializeField] private AudioClip openDoorClip;
     [SerializeField] private AudioClip shootedClip;
@@ -111,7 +115,7 @@ public class Student : MonoBehaviour
                 Random random = new Random();
                 if (cheatNumber == 0)
                 {
-                
+
                     cheatNumber = random.Next(1, 5);
                     studentAnimator.SetBool("Cheating_" + cheatNumber, true);
                     Debug.Log("Cheating variant is -  " + cheatNumber);
@@ -123,7 +127,7 @@ public class Student : MonoBehaviour
                     studentAnimator.SetBool("Cheating_" + cheatNumber, true);
                     Debug.Log("Cheating variant is -  " + cheatNumber);
                 }
-                else if(cheatNumber == 10 || cheatNumber == 12)
+                else if (cheatNumber == 10 || cheatNumber == 12)
                 {
                     StartCoroutine("PlaySideCheating");
                 }
@@ -139,7 +143,7 @@ public class Student : MonoBehaviour
                 //Debug.Log("Study variant is -  " + studyNumber);
             }
         }
-        
+
     }
 
     IEnumerator PlayBackWardCheating()
@@ -175,18 +179,18 @@ public class Student : MonoBehaviour
             StartCoroutine("PlaySideCheating");
         }
     }
-    
+
     public void ShowPaperWhileStudentWriting()
     {
         penObject.SetActive(true);
     }
-    
+
     public void ShowCheatItem1()
     {
         cheatType = "with a Phone";
         cheatItem1.SetActive(true);
     }
-    
+
     public void ShowCheatItem2()
     {
         cheatType = "with a Cheat sheet";
@@ -204,19 +208,19 @@ public class Student : MonoBehaviour
         cheatType = "with a Watches";
         cheatItem4.SetActive(true);
     }
-    
+
     public void ShowCheatItem5()
     {
         cheatType = "with a cheat sheet under the leg";
         cheatItem5.SetActive(true);
     }
-    
+
     public void ShowCheatItem6()
     {
         cheatType = "with a Cheat sheet in the books";
         cheatItem6.SetActive(true);
     }
-    
+
     public void ShowCheatItem7Pen()
     {
         cheatType = "with a cheat pen";
@@ -270,7 +274,7 @@ public class Student : MonoBehaviour
             particleSystemsEmojisGood[random.Next(0, particleSystemsEmojisGood.Length)].Play();
             //studentAudioSource.PlayOneShot(emojiClip);  
         }
-       
+
     }
 
     public void PlayBadEmojiEffect()
@@ -297,9 +301,9 @@ public class Student : MonoBehaviour
     public void GoOutFromClass()
     {
         HideAllItems();
-        door.GetComponent<Animator>().SetBool("Open",true);
+        door.GetComponent<Animator>().SetBool("Open", true);
         studentAudioSource.PlayOneShot(openDoorClip);
-        Invoke("CloseDoor",5f);
+        Invoke("CloseDoor", 5f);
 
 
         if (isLeftSideStudent)
@@ -307,7 +311,7 @@ public class Student : MonoBehaviour
             gameObject.transform.DOMove(leftPoint.position, timeToWalking).SetEase(Ease.Linear);
             gameObject.transform.DORotate(new Vector3(0, 270, 0), 0.5f).SetEase(Ease.Linear);
             studentAnimator.SetBool("Walking", true);
-            studentAnimator.SetBool("Cheating_20",false);
+            studentAnimator.SetBool("Cheating_20", false);
             Destroy(gameObject, timeToWalking);
         }
         else
@@ -315,13 +319,13 @@ public class Student : MonoBehaviour
             gameObject.transform.DOMove(rightPoint.position, timeToWalking).SetEase(Ease.Linear);
             gameObject.transform.DORotate(new Vector3(0, 90, 0), 0.5f).SetEase(Ease.Linear);
             studentAnimator.SetBool("Walking", true);
-            studentAnimator.SetBool("Cheating_20",false);
+            studentAnimator.SetBool("Cheating_20", false);
             Destroy(gameObject, timeToWalking);
         }
 
         if (isCheating)
         {
-            textPrefab.GetComponentInChildren<Text>().text = "You founded cheater " + " " + cheatType + "!";
+            textPrefab.GetComponentInChildren<TextMeshProUGUI>().text = "You founded cheater " + " " + cheatType + "!";
             studentAudioSource.PlayOneShot(notificationClip);
             var createdText = Instantiate(textPrefab);
             Destroy(createdText, 5f);
@@ -332,19 +336,19 @@ public class Student : MonoBehaviour
     {
         Random random = new Random();
         studentAnimator.SetBool("Study_" + random.Next(1, countOfStudyAnims + 1), false);
-        studentAnimator.SetBool("Shooted",false);
-        
+        studentAnimator.SetBool("Shooted", false);
+
         studentAudioSource.PlayOneShot(notificationClip);
-        textPrefab.GetComponentInChildren<Text>().text = "You pick a wrong student!";
+        textPrefab.GetComponentInChildren<TextMeshProUGUI>().text = "You pick a wrong student!";
         var createdText = Instantiate(textPrefab);
         Destroy(createdText, 5f);
     }
 
     public void CloseDoor()
     {
-        door.GetComponent<Animator>().SetBool("Open",false);
+        door.GetComponent<Animator>().SetBool("Open", false);
     }
-    
+
     [ContextMenu("DebugHitToHead")]
     private void DebugHitToHead()
     {
@@ -355,13 +359,13 @@ public class Student : MonoBehaviour
     {
         studentAnimator.SetTrigger("BackWard");
     }
-    
+
     [ContextMenu("DebugSide")]
     private void DebugSide()
     {
         studentAnimator.SetTrigger("SideCheating");
     }
-    
+
     public void PlayShootClip()
     {
         studentAudioSource.PlayOneShot(shootedClip);
@@ -385,7 +389,7 @@ public class Student : MonoBehaviour
         HideLookLineSide();
         HideLookLineBackWard();
         cheatShelf.transform.parent = null;
-        cheatShelf.GetComponent<Animator>().SetBool("Open",true);
+        cheatShelf.GetComponent<Animator>().SetBool("Open", true);
         windowCheat.SetActive(false);
         catBackpack.SetActive(false);
     }

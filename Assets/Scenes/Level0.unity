@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.6436894, g: 0.79593897, b: 0.96622676, a: 1}
+  m_IndirectSpecularColor: {r: 0.64369524, g: 0.7959404, b: 0.9662277, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -520,8 +520,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -130}
-  m_SizeDelta: {x: 489.6415, y: 112.9161}
+  m_AnchoredPosition: {x: 0.0011435, y: -137.87938}
+  m_SizeDelta: {x: 427.2, y: 56.8727}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &791064278
 MonoBehaviour:
@@ -556,7 +556,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: click to continue
+  m_Text: Tap to continue
 --- !u!222 &791064279
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -776,8 +776,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -52}
-  m_SizeDelta: {x: 489.6415, y: 112.9161}
+  m_AnchoredPosition: {x: 0, y: -59.69995}
+  m_SizeDelta: {x: 427.2066, y: 99.4885}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1578037392
 MonoBehaviour:
@@ -812,7 +812,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '"Find all the cheaters using the detector and give them F mark"'
+  m_Text: Find all cheaters using the detector and give them F mark!
 --- !u!222 &1578037393
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2060,6 +2060,14 @@ PrefabInstance:
     - target: {fileID: 5416578211836490593, guid: dbba9d7a01dd05940b26a80a357beb2a, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0.0054890597
+      objectReference: {fileID: 0}
+    - target: {fileID: 6746741734003590188, guid: dbba9d7a01dd05940b26a80a357beb2a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6746741734003590188, guid: dbba9d7a01dd05940b26a80a357beb2a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 81.5
       objectReference: {fileID: 0}
     - target: {fileID: 7286656541129542857, guid: dbba9d7a01dd05940b26a80a357beb2a, type: 3}
       propertyPath: m_Controller
