@@ -35,6 +35,7 @@ public class Bullet : MonoBehaviour
     {
         rb.velocity = transform.TransformDirection(Vector3.forward * speed);
         bullet.transform.Rotate(rotationAngle);
+        Destroy(gameObject,4f);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -47,6 +48,7 @@ public class Bullet : MonoBehaviour
             currentShootedStudent.studentAnimator.SetBool("Shooted",true);
             currentShootedStudent.PlayShootClip();
             currentShootedStudent.studentAnimator.SetBool("Cheating_20",false);
+            currentShootedStudent.studentAnimator.SetBool("Cheating_22",false);
             HitToHead(currentShootedStudent);
             currentShootedStudent.GetComponent<BoxCollider>().enabled = false;
             var hit = Instantiate(hitEffect, gameObject.transform.position,Quaternion.identity);

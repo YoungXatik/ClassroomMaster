@@ -384,7 +384,8 @@ public class Student : MonoBehaviour
         cheatItem8Calculator.SetActive(false);
         HideLookLineSide();
         HideLookLineBackWard();
-        //cheatShelf.SetActive(false);
+        cheatShelf.transform.parent = null;
+        cheatShelf.GetComponent<Animator>().SetBool("Open",true);
         windowCheat.SetActive(false);
         catBackpack.SetActive(false);
     }

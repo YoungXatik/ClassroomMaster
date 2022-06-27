@@ -28,6 +28,8 @@ public class CameraRotation : MonoBehaviour
         {
             dragging = false;
         }
+        
+      //  if(Input.GetTouch())
 
         if (dragging)
         {

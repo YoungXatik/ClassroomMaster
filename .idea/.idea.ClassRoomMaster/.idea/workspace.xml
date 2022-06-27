@@ -31,8 +31,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Anims/Shelf/LookFromShelf.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenuStartGame.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Cheaters/CheaterUICounterNote.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FirstLevel_UI.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -55,11 +57,14 @@
         <option value="$PROJECT_DIR$/Assets/MaterialsAndOther/FadeShaderRead.shader" />
         <option value="$PROJECT_DIR$/Assets/ReadStencilCustum.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/PlayerCamera.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Gun/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/PlayerRaycast.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/CameraRotation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Anims/Shelf/LookFromShelf.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Gun/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/Student.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/StudentsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/LevelProgress.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/StudentsManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FirstLevel_UI.cs" />
       </list>
     </option>
   </component>
@@ -142,6 +147,7 @@
       <workItem from="1656149694831" duration="5695000" />
       <workItem from="1656163786922" duration="779000" />
       <workItem from="1656249126095" duration="7767000" />
+      <workItem from="1656315476868" duration="7165000" />
     </task>
     <servers />
   </component>

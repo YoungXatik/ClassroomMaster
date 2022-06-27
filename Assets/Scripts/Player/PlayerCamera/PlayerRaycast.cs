@@ -53,7 +53,6 @@ public class PlayerRaycast : MonoBehaviour
 
     private void Update()
     {
-        shootButton.interactable = true;
         countOfMistakesText.text = "x" + countOfMistakes;
 
         if (playerCamera.isOpened)

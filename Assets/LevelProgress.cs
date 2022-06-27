@@ -17,13 +17,28 @@ public class LevelProgress : MonoBehaviour
     private float storedFillAmount;
     private float xIncreasedValue;
 
+    [SerializeField] private Image[] enemyIcons;
+    [SerializeField] private Image[] defeatedSprites;
+
     public Animator progressAnimator;
 
     private void Awake()
     {
+        for (int i = 0; i < defeatedSprites.Length; i++)
+        {
+            defeatedSprites[i].gameObject.SetActive(false);
+        }
+        
         Instance = this;
-        fillBar.fillAmount = (SceneManager.GetActiveScene().buildIndex * barIncreaseValue) / 100;
+        fillBar.fillAmount = ((SceneManager.GetActiveScene().buildIndex - 1) * barIncreaseValue) / 100;   
+        icon.transform.localPosition = new Vector3(((SceneManager.GetActiveScene().buildIndex - 1) * 60.9f),14);
+
+        Debug.Log("Icon pos " + icon.transform.localPosition.x);
+        Debug.Log("enemy 0 Icon pos " + enemyIcons[0].transform.localPosition.x);
+
     }
+    
+    
 
     private void Update()
     {
@@ -31,6 +46,19 @@ public class LevelProgress : MonoBehaviour
         {
             AddValueToBar();
         }
+
+        if (icon.transform.localPosition.x >= Mathf.Abs(enemyIcons[0].transform.localPosition.x))
+        {
+            defeatedSprites[0].gameObject.SetActive(true);
+        }
+        for (int i = 0; i < enemyIcons.Length; i++)
+        {
+            if (icon.transform.localPosition.x >= Mathf.Abs(enemyIcons[i].transform.localPosition.x))
+            {
+                defeatedSprites[i].gameObject.SetActive(true);
+            }
+        }
+        
     }
 
     public void OpenBar()
@@ -71,6 +99,8 @@ public class LevelProgress : MonoBehaviour
         if (iconPos.x >= 670)
             return;
         xIncreasedValue += barIncreaseValue * 670 / 100;
-        icon.transform.DOLocalMoveX(Mathf.Clamp(xIncreasedValue, 0, 670), fillTime).SetEase(Ease.Linear).startValue = new Vector3(xIncreasedValue - barIncreaseValue * 670 / 100, iconPos.y, iconPos.z);
+        icon.transform.DOLocalMoveX(Mathf.Clamp(icon.transform.localPosition.x + xIncreasedValue, 0, 670), fillTime)
+            .SetEase(Ease
+                .Linear); //.startValue = new Vector3(icon.transform.localPosition.x + xIncreasedValue - barIncreaseValue * 670 / 100, iconPos.y, iconPos.z);
     }
 }
