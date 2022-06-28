@@ -61,10 +61,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Gun/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/PlayerRaycast.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/PlayerCamera.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/Student.cs" />
         <option value="$PROJECT_DIR$/Assets/LevelProgress.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/StudentsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FirstLevel_UI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/Student.cs" />
       </list>
     </option>
   </component>
@@ -149,6 +149,7 @@
       <workItem from="1656249126095" duration="7767000" />
       <workItem from="1656315476868" duration="7747000" />
       <workItem from="1656403954897" duration="3527000" />
+      <workItem from="1656416288844" duration="477000" />
     </task>
     <servers />
   </component>

@@ -183,25 +183,25 @@ public class Student : MonoBehaviour
     
     public void ShowCheatItem1()
     {
-        cheatType = "with a Phone";
+        cheatType = "with a phone";
         cheatItem1.SetActive(true);
     }
     
     public void ShowCheatItem2()
     {
-        cheatType = "with a Cheat sheet";
+        cheatType = "with a cheat sheet";
         cheatItem2.SetActive(true);
     }
 
     public void ShowCheatItem3()
     {
-        cheatType = "with a Book";
+        cheatType = "with a book";
         cheatItem3.SetActive(true);
     }
 
     public void ShowCheatItem4()
     {
-        cheatType = "with a Watches";
+        cheatType = "with a watch";
         cheatItem4.SetActive(true);
     }
     
@@ -213,7 +213,7 @@ public class Student : MonoBehaviour
     
     public void ShowCheatItem6()
     {
-        cheatType = "with a Cheat sheet in the books";
+        cheatType = "with a cheat sheet in the books";
         cheatItem6.SetActive(true);
     }
     
@@ -326,7 +326,7 @@ public class Student : MonoBehaviour
 
         if (isCheating)
         {
-            textPrefab.GetComponentInChildren<Text>().text = "You found cheater " + " " + cheatType + "!";
+            textPrefab.GetComponentInChildren<Text>().text = "You found cheater" + "" + cheatType + "!";
             studentAudioSource.PlayOneShot(notificationClip);
             var createdText = Instantiate(textPrefab);
             Destroy(createdText, 5f);

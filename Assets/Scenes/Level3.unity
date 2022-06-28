@@ -189,11 +189,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &822385506 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2535538441061037794, guid: f810302247e546a48bb152ffb0dc58e9, type: 3}
-  m_PrefabInstance: {fileID: 4470787703147744755}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1128581845
 GameObject:
   m_ObjectHideFlags: 0
@@ -1580,16 +1575,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbba9d7a01dd05940b26a80a357beb2a, type: 3}
---- !u!1 &1199006641 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8601500278002165502, guid: f810302247e546a48bb152ffb0dc58e9, type: 3}
-  m_PrefabInstance: {fileID: 4470787703147744755}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1230003845 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5905608610523072243, guid: f810302247e546a48bb152ffb0dc58e9, type: 3}
-  m_PrefabInstance: {fileID: 4470787703147744755}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1386315218
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1748,11 +1733,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 290c6c5ecbee37d4cac89717db4cc573, type: 3}
---- !u!1 &1638071658 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7925377534836796489, guid: f810302247e546a48bb152ffb0dc58e9, type: 3}
-  m_PrefabInstance: {fileID: 4470787703147744755}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4470787703147744755
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1771,7 +1751,7 @@ PrefabInstance:
     - target: {fileID: 384194097125880180, guid: f810302247e546a48bb152ffb0dc58e9, type: 3}
       propertyPath: door
       value: 
-      objectReference: {fileID: 822385506}
+      objectReference: {fileID: 0}
     - target: {fileID: 384194097125880180, guid: f810302247e546a48bb152ffb0dc58e9, type: 3}
       propertyPath: isCheating
       value: 1
@@ -1883,7 +1863,7 @@ PrefabInstance:
     - target: {fileID: 3488093176503279461, guid: f810302247e546a48bb152ffb0dc58e9, type: 3}
       propertyPath: door
       value: 
-      objectReference: {fileID: 1638071658}
+      objectReference: {fileID: 0}
     - target: {fileID: 3488093176503279461, guid: f810302247e546a48bb152ffb0dc58e9, type: 3}
       propertyPath: isCheating
       value: 1
@@ -1903,7 +1883,7 @@ PrefabInstance:
     - target: {fileID: 6481663277412698298, guid: f810302247e546a48bb152ffb0dc58e9, type: 3}
       propertyPath: door
       value: 
-      objectReference: {fileID: 1199006641}
+      objectReference: {fileID: 0}
     - target: {fileID: 6481663277412698298, guid: f810302247e546a48bb152ffb0dc58e9, type: 3}
       propertyPath: isCheating
       value: 1
@@ -1975,7 +1955,7 @@ PrefabInstance:
     - target: {fileID: 8515971417711553184, guid: f810302247e546a48bb152ffb0dc58e9, type: 3}
       propertyPath: door
       value: 
-      objectReference: {fileID: 1230003845}
+      objectReference: {fileID: 0}
     - target: {fileID: 8515971417711553184, guid: f810302247e546a48bb152ffb0dc58e9, type: 3}
       propertyPath: isCheating
       value: 0
