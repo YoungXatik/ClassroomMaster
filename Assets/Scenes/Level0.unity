@@ -827,6 +827,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1578037390}
   m_CullTransparentMesh: 1
+--- !u!1 &1618134659 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8583472674718251796, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
+  m_PrefabInstance: {fileID: 2739050904539636604}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &962278462699257756
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2339,7 +2344,7 @@ PrefabInstance:
     - target: {fileID: 4696063911549635375, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
       propertyPath: door
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1618134659}
     - target: {fileID: 4696063911549635375, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
       propertyPath: isCheating
       value: 1

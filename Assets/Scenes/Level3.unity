@@ -1952,6 +1952,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ClassRoomD
       objectReference: {fileID: 0}
+    - target: {fileID: 8097643151269869389, guid: f810302247e546a48bb152ffb0dc58e9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.19
+      objectReference: {fileID: 0}
     - target: {fileID: 8515971417711553184, guid: f810302247e546a48bb152ffb0dc58e9, type: 3}
       propertyPath: door
       value: 

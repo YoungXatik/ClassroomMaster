@@ -134,6 +134,14 @@ PrefabInstance:
       propertyPath: isLeftSideStudent
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 674044911928183673, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 19.06214
+      objectReference: {fileID: 0}
+    - target: {fileID: 674044911928183673, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.5188
+      objectReference: {fileID: 0}
     - target: {fileID: 1501389242601160964, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
       propertyPath: m_LocalPosition.z
       value: 23.47
@@ -160,7 +168,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2688582235811730900, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.62
+      value: 4.89
       objectReference: {fileID: 0}
     - target: {fileID: 2739050904277861754, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
       propertyPath: isCheating
@@ -246,6 +254,10 @@ PrefabInstance:
       propertyPath: door
       value: 
       objectReference: {fileID: 179817229}
+    - target: {fileID: 4773452379690962070, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.02
+      objectReference: {fileID: 0}
     - target: {fileID: 5053016991257620869, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
       propertyPath: door
       value: 
@@ -261,6 +273,14 @@ PrefabInstance:
     - target: {fileID: 6595677596202087536, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.00006659269
+      objectReference: {fileID: 0}
+    - target: {fileID: 7064141311837216952, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 101.425674
+      objectReference: {fileID: 0}
+    - target: {fileID: 7064141311837216952, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.0243
       objectReference: {fileID: 0}
     - target: {fileID: 7430240411223505965, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
       propertyPath: door

@@ -672,6 +672,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 536878684233413458, guid: 692c2f3504652a54b8c6187e7c080e2e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.19
+      objectReference: {fileID: 0}
     - target: {fileID: 536878685785093648, guid: 692c2f3504652a54b8c6187e7c080e2e, type: 3}
       propertyPath: m_Name
       value: ClassRoomUpDown

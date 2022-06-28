@@ -457,7 +457,7 @@ MonoBehaviour:
   BackwardLookLine: {fileID: 3053546706618242669}
   SideLookLine: {fileID: 37552736014234207}
   cheatType: 
-  textPrefab: {fileID: 5782632386637428699, guid: 4a30f6d91eb71c8469da203642e493e9, type: 3}
+  textPrefab: {fileID: 5782632386637428699, guid: 0c3bfcceeb4cfdd4fab1861e84e5c03f, type: 3}
   penObject: {fileID: 9206133227956527593}
   particleSystemsEmojisGood:
   - {fileID: 0}
@@ -474,7 +474,7 @@ MonoBehaviour:
   rightPoint: {fileID: 0}
   backwardPoint: {fileID: 0}
   isLeftSideStudent: 1
-  timeToWalking: 10
+  timeToWalking: 7
   door: {fileID: 0}
   studentAudioSource: {fileID: 7496406625079885404}
   openDoorClip: {fileID: 8300000, guid: 4d2696e7961de4d4286e193d9dc6d67b, type: 3}
