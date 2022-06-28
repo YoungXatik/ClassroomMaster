@@ -255,6 +255,11 @@ public class Student : MonoBehaviour
         catBackpack.SetActive(true);
     }
 
+    public void WindowCheating()
+    {
+        cheatType = "in a window";
+    }
+
 
     public void PlayGoodEmojiEffect()
     {
@@ -321,7 +326,7 @@ public class Student : MonoBehaviour
 
         if (isCheating)
         {
-            textPrefab.GetComponentInChildren<Text>().text = "You founded cheater " + " " + cheatType + "!";
+            textPrefab.GetComponentInChildren<Text>().text = "You found cheater " + " " + cheatType + "!";
             studentAudioSource.PlayOneShot(notificationClip);
             var createdText = Instantiate(textPrefab);
             Destroy(createdText, 5f);

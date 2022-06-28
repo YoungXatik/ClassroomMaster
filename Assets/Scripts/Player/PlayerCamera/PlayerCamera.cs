@@ -12,16 +12,12 @@ public class PlayerCamera : MonoBehaviour
     [SerializeField] public bool isOpened;
     [SerializeField] public GameObject openButton;
     [SerializeField] public GameObject closeButton;
-    [SerializeField] private Transform startCameraPosition;
-    [SerializeField] private Transform finalCameraPosition;
-    [SerializeField] private float timeToChangeCameraState;
     [SerializeField] private Animator cameraAnim;
     
     [Header("CameraScale")]
     [SerializeField] public float zoomOn;
     [SerializeField] public float zoomOff;
     [SerializeField] public LayerMask cheatingLayerMask;
-    [SerializeField] public Camera mainCamera;
 
     [Header("ButtonsActive")] 
     [SerializeField] private Image cameraButton;
@@ -55,6 +51,10 @@ public class PlayerCamera : MonoBehaviour
     {
         if (isOpened == false)
         {
+            var Seq = DOTween.Sequence();
+            Seq.Append(playerRaycast.cameraButtonBackGround.transform.DOScale(new Vector3(0.7f, 0.7f, 0), 0.1f));
+            Seq.Append(playerRaycast.cameraButtonBackGround.transform.DOScale(new Vector3(1f, 1f, 0), 0.1f));
+            
             cameraAudioSource.PlayOneShot(openClip);
             testCamera.SetActive(true);
             //testCamera.transform.DOMove(finalCameraPosition.position, timeToChangeCameraState);
@@ -65,7 +65,7 @@ public class PlayerCamera : MonoBehaviour
             Camera.main.cullingMask += cheatingLayerMask;
             EnableZoom();
             //playerRaycast.timeBetweenShootCounter = 0;
-            cameraButton.sprite = closedButtonSprite;
+            cameraButton.sprite = openButtonSprite;
         }
     }
 
@@ -73,6 +73,9 @@ public class PlayerCamera : MonoBehaviour
     {
         if (isOpened)
         {
+            var Seq = DOTween.Sequence();
+            Seq.Append(playerRaycast.cameraButtonBackGround.transform.DOScale(new Vector3(0.7f, 0.7f, 0), 0.1f));
+            Seq.Append(playerRaycast.cameraButtonBackGround.transform.DOScale(new Vector3(1f, 1f, 0), 0.1f));
             //testCamera.transform.DOMove(startCameraPosition.position, timeToChangeCameraState);
             cameraAnim.SetBool("OpenCamera",false);
            // testCamera.SetActive(false);

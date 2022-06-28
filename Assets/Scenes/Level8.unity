@@ -20,11 +20,11 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
-  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
-  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientSkyColor: {r: 0.9473069, g: 0.7681514, b: 0.37123778, a: 1}
+  m_AmbientEquatorColor: {r: 0.40197787, g: 0.65837497, b: 0.89626956, a: 1}
+  m_AmbientGroundColor: {r: 1, g: 1, b: 1, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 1
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
@@ -136,7 +136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4618073752143060014, guid: e31899b3b53c4794a96ac29ee16d8a97, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4749921001419145692, guid: e31899b3b53c4794a96ac29ee16d8a97, type: 3}
       propertyPath: m_Pivot.x
@@ -148,7 +148,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4749921001419145692, guid: e31899b3b53c4794a96ac29ee16d8a97, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4749921001419145692, guid: e31899b3b53c4794a96ac29ee16d8a97, type: 3}
       propertyPath: m_AnchorMax.x
@@ -381,7 +381,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 75, y: -45, z: 95}
 --- !u!1001 &290096178
 PrefabInstance:
@@ -392,7 +392,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 962278462926744577, guid: 290c6c5ecbee37d4cac89717db4cc573, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 962278462926744577, guid: 290c6c5ecbee37d4cac89717db4cc573, type: 3}
       propertyPath: m_LocalPosition.x
@@ -461,7 +461,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 359235131776322156, guid: 57480a460aea1154ea7d23c84296fc19, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.12
+      value: 1.64
       objectReference: {fileID: 0}
     - target: {fileID: 359235131776322156, guid: 57480a460aea1154ea7d23c84296fc19, type: 3}
       propertyPath: m_LocalRotation.w
@@ -650,7 +650,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 75, y: -45, z: 95}
 --- !u!4 &6633633409238284177 stripped
 Transform:
@@ -664,9 +664,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 934009125854265524, guid: 8960ca516149987408ebfcf0a10be6ac, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824102000212325920, guid: 8960ca516149987408ebfcf0a10be6ac, type: 3}
+      propertyPath: isLeftSideStudent
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2081460039691736705, guid: 8960ca516149987408ebfcf0a10be6ac, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.52
+      value: 4.82
       objectReference: {fileID: 0}
     - target: {fileID: 3453375836327367701, guid: 8960ca516149987408ebfcf0a10be6ac, type: 3}
       propertyPath: m_RootOrder
@@ -720,6 +728,18 @@ PrefabInstance:
       propertyPath: door
       value: 
       objectReference: {fileID: 1222093335}
+    - target: {fileID: 5243331742694002496, guid: 8960ca516149987408ebfcf0a10be6ac, type: 3}
+      propertyPath: isLeftSideStudent
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5770020323555910785, guid: 8960ca516149987408ebfcf0a10be6ac, type: 3}
+      propertyPath: isLeftSideStudent
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800340343143900664, guid: 8960ca516149987408ebfcf0a10be6ac, type: 3}
+      propertyPath: isLeftSideStudent
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7772809641526001678, guid: 8960ca516149987408ebfcf0a10be6ac, type: 3}
       propertyPath: door
       value: 

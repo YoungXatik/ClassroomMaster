@@ -232,16 +232,12 @@ MonoBehaviour:
   isOpened: 0
   openButton: {fileID: 1582601173971534694}
   closeButton: {fileID: 1582601173801809467}
-  startCameraPosition: {fileID: 1582601172859295436}
-  finalCameraPosition: {fileID: 1582601173965708141}
-  timeToChangeCameraState: 0.3
   cameraAnim: {fileID: 6230541898909449520}
   zoomOn: 45
   zoomOff: 0
   cheatingLayerMask:
     serializedVersion: 2
     m_Bits: 64
-  mainCamera: {fileID: 1582601174017458377}
   cameraButton: {fileID: 8330783931021385995}
   closedButtonSprite: {fileID: 21300000, guid: 4577fca5ed64f92468b27de7d4ed03ba, type: 3}
   openButtonSprite: {fileID: 21300000, guid: 3c326d4f4169fc64aa8ec911965bc642, type: 3}
@@ -6247,7 +6243,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0, g: 0.03703201, b: 0.49056602, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1.52
@@ -23090,7 +23086,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 680, y: -48}
+  m_AnchoredPosition: {x: 669.903, y: -48}
   m_SizeDelta: {x: 78, y: 78}
   m_Pivot: {x: 4.87, y: 0.5}
 --- !u!222 &3046909177715610527
@@ -23719,7 +23715,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -103.99997, y: 81}
+  m_AnchoredPosition: {x: 0.000015258789, y: -81.5}
   m_SizeDelta: {x: 1080, y: 163}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6746741734003590191
@@ -24871,7 +24867,7 @@ Transform:
   m_GameObject: {fileID: 8417435725909095004}
   m_LocalRotation: {x: 0.011622398, y: 0.67260677, z: 0.7398334, w: -0.010566303}
   m_LocalPosition: {x: 0.0026, y: 0.0182, z: -0.27463526}
-  m_LocalScale: {x: 0.105889454, y: 0.83461237, z: 0.11606237}
+  m_LocalScale: {x: 0.09301858, y: 0.83461237, z: 0.0900774}
   m_Children: []
   m_Father: {fileID: 1582601172106794942}
   m_RootOrder: 1
@@ -25216,7 +25212,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8d39769d00482340bb8de257089e203, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.27463526
+      value: 4.36
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8d39769d00482340bb8de257089e203, type: 3}
       propertyPath: m_LocalRotation.w
@@ -25249,7 +25245,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: f8d39769d00482340bb8de257089e203, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 005849c57f96462458e13d465c696675, type: 2}
+      objectReference: {fileID: 2100000, guid: 992522226633ca94da49ee0fdaca8bdd, type: 2}
     - target: {fileID: 919132149155446097, guid: f8d39769d00482340bb8de257089e203, type: 3}
       propertyPath: m_Name
       value: Detector

@@ -76,7 +76,7 @@ public class LevelProgress : MonoBehaviour
         progressAnimator.SetBool("Open", true);
         yield return new WaitForSeconds(1f);
         AddValueToBar();
-        yield return new WaitForSeconds(fillTime);
+        yield return new WaitForSeconds(fillTime + 1f);
         progressAnimator.SetBool("Open",false);
     }
     
@@ -84,7 +84,7 @@ public class LevelProgress : MonoBehaviour
     {
         progressAnimator.SetBool("Open", true);
         yield return new WaitForSeconds(1f);
-        yield return new WaitForSeconds(fillTime);
+        yield return new WaitForSeconds(fillTime + 1f);
         progressAnimator.SetBool("Open",false);
     }
 

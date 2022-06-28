@@ -172,7 +172,7 @@ public class StudentsManager : MonoBehaviour
 
     public void LoadNextLevel()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 10)
+        if (SceneManager.GetActiveScene().buildIndex == 11)
         {
             SceneManager.LoadScene(1);
         }

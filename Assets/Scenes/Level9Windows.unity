@@ -20,11 +20,11 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
-  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
-  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientSkyColor: {r: 0.9473069, g: 0.7681514, b: 0.37123778, a: 1}
+  m_AmbientEquatorColor: {r: 0.40197787, g: 0.65837497, b: 0.89626956, a: 1}
+  m_AmbientGroundColor: {r: 1, g: 1, b: 1, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 1
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
@@ -375,6 +375,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 75, y: -45, z: 95}
+--- !u!1 &873654334 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7459308655184054263, guid: b76c59d75111cb44b91e354ee0ce7836, type: 3}
+  m_PrefabInstance: {fileID: 7832233622626107927}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1024932426 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3238190242784621671, guid: b76c59d75111cb44b91e354ee0ce7836, type: 3}
@@ -434,6 +439,14 @@ PrefabInstance:
     - target: {fileID: 857444117891364541, guid: dbba9d7a01dd05940b26a80a357beb2a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582601174017458383, guid: dbba9d7a01dd05940b26a80a357beb2a, type: 3}
+      propertyPath: maximumHoriz
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582601174017458383, guid: dbba9d7a01dd05940b26a80a357beb2a, type: 3}
+      propertyPath: minimumHoriz
+      value: -60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbba9d7a01dd05940b26a80a357beb2a, type: 3}
@@ -625,6 +638,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4890779458495655974, guid: b76c59d75111cb44b91e354ee0ce7836, type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 873654334}
     - target: {fileID: 5298065015699041529, guid: b76c59d75111cb44b91e354ee0ce7836, type: 3}
       propertyPath: m_LocalScale.x
       value: 70.8972
@@ -657,6 +674,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 992522226633ca94da49ee0fdaca8bdd, type: 2}
+    - target: {fileID: 7343624379678394148, guid: b76c59d75111cb44b91e354ee0ce7836, type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 1024932426}
+    - target: {fileID: 7343624379678394148, guid: b76c59d75111cb44b91e354ee0ce7836, type: 3}
+      propertyPath: isLeftSideStudent
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7343624379678394148, guid: b76c59d75111cb44b91e354ee0ce7836, type: 3}
       propertyPath: numberOfAnimation
       value: 20

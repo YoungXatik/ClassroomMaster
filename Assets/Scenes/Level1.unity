@@ -189,6 +189,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &652039052 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7034217360077506948, guid: b01c8f25cd35a2842b7c36f4629eebcc, type: 3}
+  m_PrefabInstance: {fileID: 6721573958514050791}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &699528850
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,19 +287,9 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 75, y: -45, z: 95}
---- !u!1 &900246767 stripped
+--- !u!1 &731669164 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 3519347179339911083, guid: b01c8f25cd35a2842b7c36f4629eebcc, type: 3}
-  m_PrefabInstance: {fileID: 6721573958514050791}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1152249004 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4948826396744817357, guid: b01c8f25cd35a2842b7c36f4629eebcc, type: 3}
-  m_PrefabInstance: {fileID: 6721573958514050791}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1202749164 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8683889239997481622, guid: b01c8f25cd35a2842b7c36f4629eebcc, type: 3}
+  m_CorrespondingSourceObject: {fileID: 3014842408779976386, guid: b01c8f25cd35a2842b7c36f4629eebcc, type: 3}
   m_PrefabInstance: {fileID: 6721573958514050791}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1222232036
@@ -471,6 +466,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbba9d7a01dd05940b26a80a357beb2a, type: 3}
+--- !u!1 &1389552492 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4148061508015444422, guid: b01c8f25cd35a2842b7c36f4629eebcc, type: 3}
+  m_PrefabInstance: {fileID: 6721573958514050791}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1981295539
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -536,7 +536,15 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 68100263944479371, guid: b01c8f25cd35a2842b7c36f4629eebcc, type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 1389552492}
+    - target: {fileID: 68100263944479371, guid: b01c8f25cd35a2842b7c36f4629eebcc, type: 3}
       propertyPath: isCheating
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 68100263944479371, guid: b01c8f25cd35a2842b7c36f4629eebcc, type: 3}
+      propertyPath: isLeftSideStudent
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 545599507716335183, guid: b01c8f25cd35a2842b7c36f4629eebcc, type: 3}
@@ -594,7 +602,7 @@ PrefabInstance:
     - target: {fileID: 1977982303829167148, guid: b01c8f25cd35a2842b7c36f4629eebcc, type: 3}
       propertyPath: door
       value: 
-      objectReference: {fileID: 1202749164}
+      objectReference: {fileID: 0}
     - target: {fileID: 1977982303829167148, guid: b01c8f25cd35a2842b7c36f4629eebcc, type: 3}
       propertyPath: leftPoint
       value: 
@@ -662,7 +670,7 @@ PrefabInstance:
     - target: {fileID: 2443520339300228575, guid: b01c8f25cd35a2842b7c36f4629eebcc, type: 3}
       propertyPath: door
       value: 
-      objectReference: {fileID: 1202749164}
+      objectReference: {fileID: 731669164}
     - target: {fileID: 2443520339300228575, guid: b01c8f25cd35a2842b7c36f4629eebcc, type: 3}
       propertyPath: isCheating
       value: 1
@@ -738,10 +746,10 @@ PrefabInstance:
     - target: {fileID: 7662220781317964203, guid: b01c8f25cd35a2842b7c36f4629eebcc, type: 3}
       propertyPath: door
       value: 
-      objectReference: {fileID: 1152249004}
+      objectReference: {fileID: 0}
     - target: {fileID: 7662220781317964203, guid: b01c8f25cd35a2842b7c36f4629eebcc, type: 3}
       propertyPath: isCheating
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7662220781317964203, guid: b01c8f25cd35a2842b7c36f4629eebcc, type: 3}
       propertyPath: isLeftSideStudent
@@ -754,10 +762,14 @@ PrefabInstance:
     - target: {fileID: 8406417358194466341, guid: b01c8f25cd35a2842b7c36f4629eebcc, type: 3}
       propertyPath: door
       value: 
-      objectReference: {fileID: 900246767}
+      objectReference: {fileID: 652039052}
     - target: {fileID: 8406417358194466341, guid: b01c8f25cd35a2842b7c36f4629eebcc, type: 3}
       propertyPath: isCheating
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8406417358194466341, guid: b01c8f25cd35a2842b7c36f4629eebcc, type: 3}
+      propertyPath: timeToWalking
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8459120623947683270, guid: b01c8f25cd35a2842b7c36f4629eebcc, type: 3}
       propertyPath: emojiClip

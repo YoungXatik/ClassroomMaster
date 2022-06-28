@@ -9,6 +9,7 @@ public class FirstLevel_UI : MonoBehaviour
     [SerializeField] private PlayerCamera playerCamera;
     [SerializeField] private PlayerRaycast playerRaycast;
     [SerializeField] private CameraRotation cameraRotation;
+    [SerializeField] private GameObject[] UIelements;
 
     private void Start()
     {
@@ -21,6 +22,10 @@ public class FirstLevel_UI : MonoBehaviour
         playerCamera.openButton.SetActive(false);
         playerRaycast.countOfMistakesText.gameObject.SetActive(false);
         cameraRotation.enabled = false;
+        for (int i = 0; i < UIelements.Length; i++)
+        {
+            UIelements[i].SetActive(false);
+        }
     }
 
     public void ClickOnPanel()
@@ -30,6 +35,10 @@ public class FirstLevel_UI : MonoBehaviour
         playerRaycast.shootButton.gameObject.SetActive(true);
         playerCamera.openButton.SetActive(true);
         cameraRotation.enabled = true;
+        for (int i = 0; i < UIelements.Length; i++)
+        {
+            UIelements[i].SetActive(true);
+        }
         Destroy(gameObject);
     }
 }

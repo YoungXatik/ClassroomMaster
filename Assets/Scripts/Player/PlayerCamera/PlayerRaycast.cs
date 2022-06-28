@@ -128,6 +128,9 @@ public class PlayerRaycast : MonoBehaviour
 
     public void Shoot()
     {
+        var Seq = DOTween.Sequence();
+        Seq.Append(fButtonBackGround.transform.DOScale(new Vector3(0.7f, 0.7f, 0), 0.1f));
+        Seq.Append(fButtonBackGround.transform.DOScale(new Vector3(1f, 1f, 0), 0.1f));
         var bullet = Instantiate(bulletPrefab, bulletStartPos.position, transform.rotation);
         cameraAudioSource.PlayOneShot(shootClip);
     }
