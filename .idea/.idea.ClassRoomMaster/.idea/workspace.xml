@@ -52,19 +52,19 @@
         <option value="$PROJECT_DIR$/Assets/FadeShaderRead.shader" />
         <option value="$PROJECT_DIR$/Assets/JMO Assets/Toony Colors Pro/Shaders Generated/Examples/SG2/Hologram.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/CheaterUICounterNote.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenuStartGame.cs" />
         <option value="$PROJECT_DIR$/Assets/MaterialsAndOther/FadeShader.shader" />
         <option value="$PROJECT_DIR$/Assets/MaterialsAndOther/FadeShaderRead.shader" />
         <option value="$PROJECT_DIR$/Assets/ReadStencilCustum.shader" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/CameraRotation.cs" />
         <option value="$PROJECT_DIR$/Assets/Anims/Shelf/LookFromShelf.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Gun/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/PlayerRaycast.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/PlayerCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/LevelProgress.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/StudentsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FirstLevel_UI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/Student.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Cheaters/StudentsManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenuStartGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/CameraRotation.cs" />
       </list>
     </option>
   </component>
@@ -152,6 +152,7 @@
       <workItem from="1656416288844" duration="477000" />
       <workItem from="1656419526995" duration="596000" />
       <workItem from="1656420743231" duration="3114000" />
+      <workItem from="1656497299731" duration="3480000" />
     </task>
     <servers />
   </component>

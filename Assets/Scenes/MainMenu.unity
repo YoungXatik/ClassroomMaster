@@ -1186,6 +1186,7 @@ MonoBehaviour:
   doorOpenClip: {fileID: 8300000, guid: 932a2353e1990ba498a8e2f1acdb4130, type: 3}
   swooshClip: {fileID: 8300000, guid: 8808311733d4dc4488ecb097bd2a5adb, type: 3}
   playerSource: {fileID: 45278092}
+  savedLevelNumber: 1
 --- !u!82 &1495382937
 AudioSource:
   m_ObjectHideFlags: 0

@@ -17,8 +17,12 @@ public class MainMenuStartGame : MonoBehaviour
     [SerializeField] private AudioClip swooshClip;
     [SerializeField] private AudioSource playerSource;
 
+    [SerializeField] public int savedLevelNumber = 1;
+
     public void StartGame()
     {
+        Debug.Log("current saved level" + " " + PlayerPrefs.GetInt("savedLevelNumber"));
+
         for (int i = 0; i < otherObjectToDeactivate.Length; i++)
         {
             otherObjectToDeactivate[i].SetActive(false);
@@ -33,7 +37,7 @@ public class MainMenuStartGame : MonoBehaviour
 
     public void LoadLevel()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(PlayerPrefs.GetInt("savedLevelNumber"));
     }
 
     public void OpenTheDoor()

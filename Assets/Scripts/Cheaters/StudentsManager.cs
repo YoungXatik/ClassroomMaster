@@ -147,6 +147,8 @@ public class StudentsManager : MonoBehaviour
 
     public void WinAnimation()
     {
+        PlayerPrefs.SetInt("savedLevelNumber",SceneManager.GetActiveScene().buildIndex + 1);
+        PlayerPrefs.Save();
         levelProgressBar.OpenBar();
         playerObject.transform.position = startPlayerPos.position;
         playerObject.transform.rotation = startPlayerPos.rotation;
@@ -175,6 +177,7 @@ public class StudentsManager : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 11)
         {
             SceneManager.LoadScene(1);
+            PlayerPrefs.SetInt("savedLevelNumber",1);
         }
         else
         {

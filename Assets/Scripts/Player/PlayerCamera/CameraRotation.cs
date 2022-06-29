@@ -20,16 +20,23 @@ public class CameraRotation : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        /*if (Input.GetMouseButtonDown(0))
         {
             dragging = true;
         }
         else if (Input.GetMouseButtonUp(0))
         {
             dragging = false;
+        }*/
+
+        if (Input.touchCount == 1)
+        {
+            dragging = true;
         }
-        
-      //  if(Input.GetTouch())
+        else
+        {
+            dragging = false;
+        }
 
         if (dragging)
         {
