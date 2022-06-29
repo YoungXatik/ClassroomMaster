@@ -16,11 +16,18 @@ public class MainMenuStartGame : MonoBehaviour
     [SerializeField] private AudioClip doorOpenClip;
     [SerializeField] private AudioClip swooshClip;
     [SerializeField] private AudioSource playerSource;
-
-    [SerializeField] public int savedLevelNumber = 1;
+    
 
     public void StartGame()
     {
+        if (PlayerPrefs.HasKey("savedLevelNumber"))
+        {
+            return;
+        }
+        else
+        {
+            PlayerPrefs.SetInt("savedLevelNumber",1);
+        }
         Debug.Log("current saved level" + " " + PlayerPrefs.GetInt("savedLevelNumber"));
 
         for (int i = 0; i < otherObjectToDeactivate.Length; i++)

@@ -196,4 +196,10 @@ public class StudentsManager : MonoBehaviour
     {
         WinAnimation();
     }
+    
+    [ContextMenu("ResetPrefs")]
+        public void ResetPrefs()
+        {
+            PlayerPrefs.SetInt("savedLevelNumber",1);
+        }
 }
