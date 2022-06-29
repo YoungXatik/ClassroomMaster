@@ -302,9 +302,7 @@ public class Student : MonoBehaviour
     public void GoOutFromClass()
     {
         HideAllItems();
-        door.GetComponent<Animator>().SetBool("Open",true);
-        studentAudioSource.PlayOneShot(openDoorClip);
-        Invoke("CloseDoor",5f);
+        StartCoroutine(OpenAndCloseTheDoor());
 
 
         if (isLeftSideStudent)
@@ -326,7 +324,7 @@ public class Student : MonoBehaviour
 
         if (isCheating)
         {
-            textPrefab.GetComponentInChildren<Text>().text = "You found cheater" + "" + cheatType + "!";
+            textPrefab.GetComponentInChildren<Text>().text = "You found cheater" + " " + cheatType + "!";
             studentAudioSource.PlayOneShot(notificationClip);
             var createdText = Instantiate(textPrefab);
             Destroy(createdText, 5f);
@@ -345,10 +343,20 @@ public class Student : MonoBehaviour
         Destroy(createdText, 5f);
     }
 
-    public void CloseDoor()
+    public IEnumerator OpenAndCloseTheDoor()
     {
-        door.GetComponent<Animator>().SetBool("Open",false);
+        var doorAnim = door.GetComponent<Animator>();
+        yield return new WaitForSeconds(0.1f);
+        doorAnim.SetBool("Open",true);
+        studentAudioSource.PlayOneShot(openDoorClip);
+        yield return new WaitForSeconds(6f);
+        doorAnim.SetBool("Open",false);
+        yield return new WaitForSeconds(0.5f);
+        doorAnim.SetBool("ToIdle",true);
+        studentAudioSource.PlayOneShot(openDoorClip);
     }
+
+    
     
     [ContextMenu("DebugHitToHead")]
     private void DebugHitToHead()

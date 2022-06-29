@@ -136,7 +136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4618073752143060014, guid: e31899b3b53c4794a96ac29ee16d8a97, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4749921001419145692, guid: e31899b3b53c4794a96ac29ee16d8a97, type: 3}
       propertyPath: m_Pivot.x
@@ -375,6 +375,14 @@ PrefabInstance:
     - target: {fileID: 409632042937621193, guid: dbba9d7a01dd05940b26a80a357beb2a, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0.005691249
+      objectReference: {fileID: 0}
+    - target: {fileID: 507419122186200201, guid: dbba9d7a01dd05940b26a80a357beb2a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -218.20264
+      objectReference: {fileID: 0}
+    - target: {fileID: 507419122186200201, guid: dbba9d7a01dd05940b26a80a357beb2a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -37.07715
       objectReference: {fileID: 0}
     - target: {fileID: 512172836870884042, guid: dbba9d7a01dd05940b26a80a357beb2a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1854,6 +1862,18 @@ PrefabInstance:
     - target: {fileID: 174786329450067193, guid: b76c59d75111cb44b91e354ee0ce7836, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0.041377917
+      objectReference: {fileID: 0}
+    - target: {fileID: 198472849776761352, guid: b76c59d75111cb44b91e354ee0ce7836, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.06541
+      objectReference: {fileID: 0}
+    - target: {fileID: 198472849776761352, guid: b76c59d75111cb44b91e354ee0ce7836, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.00207
+      objectReference: {fileID: 0}
+    - target: {fileID: 198472849776761352, guid: b76c59d75111cb44b91e354ee0ce7836, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.03288
       objectReference: {fileID: 0}
     - target: {fileID: 219202202099442163, guid: b76c59d75111cb44b91e354ee0ce7836, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18179,6 +18199,10 @@ PrefabInstance:
       propertyPath: door
       value: 
       objectReference: {fileID: 307336377}
+    - target: {fileID: 7343624379678394148, guid: b76c59d75111cb44b91e354ee0ce7836, type: 3}
+      propertyPath: isLeftSideStudent
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7366765395386421951, guid: b76c59d75111cb44b91e354ee0ce7836, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.00000009848736

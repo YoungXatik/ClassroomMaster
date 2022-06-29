@@ -302,8 +302,12 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 962278462926744577, guid: 290c6c5ecbee37d4cac89717db4cc573, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 25.598574
+      objectReference: {fileID: 0}
+    - target: {fileID: 962278462926744577, guid: 290c6c5ecbee37d4cac89717db4cc573, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.31
+      value: 1.3664
       objectReference: {fileID: 0}
     - target: {fileID: 962278462926744577, guid: 290c6c5ecbee37d4cac89717db4cc573, type: 3}
       propertyPath: m_LocalPosition.y
@@ -651,9 +655,17 @@ PrefabInstance:
       propertyPath: isLeftSideStudent
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7679044976944317353, guid: 8960ca516149987408ebfcf0a10be6ac, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7772809641526001678, guid: 8960ca516149987408ebfcf0a10be6ac, type: 3}
       propertyPath: door
       value: 
       objectReference: {fileID: 1222093335}
+    - target: {fileID: 8709657662221358566, guid: 8960ca516149987408ebfcf0a10be6ac, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8960ca516149987408ebfcf0a10be6ac, type: 3}

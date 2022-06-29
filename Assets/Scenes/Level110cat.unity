@@ -139,6 +139,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 237636643772994273, guid: b76c59d75111cb44b91e354ee0ce7836, type: 3}
+      propertyPath: isLeftSideStudent
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 237636643772994273, guid: b76c59d75111cb44b91e354ee0ce7836, type: 3}
       propertyPath: numberOfAnimation
       value: 21
       objectReference: {fileID: 0}
@@ -202,6 +206,18 @@ PrefabInstance:
       propertyPath: door
       value: 
       objectReference: {fileID: 175805963}
+    - target: {fileID: 7234069848086892493, guid: b76c59d75111cb44b91e354ee0ce7836, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0498
+      objectReference: {fileID: 0}
+    - target: {fileID: 7234069848086892493, guid: b76c59d75111cb44b91e354ee0ce7836, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0021
+      objectReference: {fileID: 0}
+    - target: {fileID: 7234069848086892493, guid: b76c59d75111cb44b91e354ee0ce7836, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0475
+      objectReference: {fileID: 0}
     - target: {fileID: 7343624379678394148, guid: b76c59d75111cb44b91e354ee0ce7836, type: 3}
       propertyPath: isCheating
       value: 0
@@ -210,6 +226,10 @@ PrefabInstance:
       propertyPath: studentAnimator
       value: 
       objectReference: {fileID: 175805961}
+    - target: {fileID: 7343624379678394148, guid: b76c59d75111cb44b91e354ee0ce7836, type: 3}
+      propertyPath: isLeftSideStudent
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7832581992843405869, guid: b76c59d75111cb44b91e354ee0ce7836, type: 3}
       propertyPath: door
       value: 

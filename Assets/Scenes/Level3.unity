@@ -1575,6 +1575,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbba9d7a01dd05940b26a80a357beb2a, type: 3}
+--- !u!1 &1239177656 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1366388450905433514, guid: f810302247e546a48bb152ffb0dc58e9, type: 3}
+  m_PrefabInstance: {fileID: 4470787703147744755}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1386315218
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1688,8 +1693,12 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 962278462926744577, guid: 290c6c5ecbee37d4cac89717db4cc573, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 24.921156
+      objectReference: {fileID: 0}
+    - target: {fileID: 962278462926744577, guid: 290c6c5ecbee37d4cac89717db4cc573, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.0748425
+      value: 0.4708
       objectReference: {fileID: 0}
     - target: {fileID: 962278462926744577, guid: 290c6c5ecbee37d4cac89717db4cc573, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1872,9 +1881,17 @@ PrefabInstance:
       propertyPath: outlineWidth
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5019352787602312908, guid: f810302247e546a48bb152ffb0dc58e9, type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 1239177656}
     - target: {fileID: 5876443607791419988, guid: f810302247e546a48bb152ffb0dc58e9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 6085744226414455660, guid: f810302247e546a48bb152ffb0dc58e9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -25.625
       objectReference: {fileID: 0}
     - target: {fileID: 6481663277412698296, guid: f810302247e546a48bb152ffb0dc58e9, type: 3}
       propertyPath: outlineWidth
@@ -1903,6 +1920,14 @@ PrefabInstance:
     - target: {fileID: 7404049675337488899, guid: f810302247e546a48bb152ffb0dc58e9, type: 3}
       propertyPath: isLeftSideStudent
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889906596369815922, guid: f810302247e546a48bb152ffb0dc58e9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 242.71028
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889906596369815922, guid: f810302247e546a48bb152ffb0dc58e9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -20.8646
       objectReference: {fileID: 0}
     - target: {fileID: 8097643149600780812, guid: f810302247e546a48bb152ffb0dc58e9, type: 3}
       propertyPath: m_RootOrder

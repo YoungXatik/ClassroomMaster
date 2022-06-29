@@ -844,6 +844,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 962278462926744577, guid: 290c6c5ecbee37d4cac89717db4cc573, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 30.073439
+      objectReference: {fileID: 0}
+    - target: {fileID: 962278462926744577, guid: 290c6c5ecbee37d4cac89717db4cc573, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.31
       objectReference: {fileID: 0}
@@ -2278,8 +2282,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2688582235811730900, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.823
+      objectReference: {fileID: 0}
+    - target: {fileID: 2688582235811730900, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.61
+      value: 4.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739050904158065979, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.468851
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739050904158065979, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.664332
       objectReference: {fileID: 0}
     - target: {fileID: 2739050905595961800, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
       propertyPath: outlineColor.b
@@ -2349,6 +2365,10 @@ PrefabInstance:
       propertyPath: isCheating
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4773452379690962070, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.17
+      objectReference: {fileID: 0}
     - target: {fileID: 5053016991257620869, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
       propertyPath: isCheating
       value: 0
@@ -2372,6 +2392,14 @@ PrefabInstance:
     - target: {fileID: 6731021113967812780, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7064141311837216952, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 114.4136
+      objectReference: {fileID: 0}
+    - target: {fileID: 7064141311837216952, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.284
       objectReference: {fileID: 0}
     - target: {fileID: 7430240411223505965, guid: 7532b54ca8066774b9082c3759db0cb7, type: 3}
       propertyPath: door

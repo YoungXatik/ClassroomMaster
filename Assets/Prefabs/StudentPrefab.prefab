@@ -474,7 +474,7 @@ MonoBehaviour:
   rightPoint: {fileID: 0}
   backwardPoint: {fileID: 0}
   isLeftSideStudent: 1
-  timeToWalking: 7
+  timeToWalking: 8
   door: {fileID: 0}
   studentAudioSource: {fileID: 7496406625079885404}
   openDoorClip: {fileID: 8300000, guid: 4d2696e7961de4d4286e193d9dc6d67b, type: 3}
@@ -3366,7 +3366,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2348476106644334647, guid: 5a7b819f59c9e1d418152f57877c3549, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5085745769686734111, guid: 5a7b819f59c9e1d418152f57877c3549, type: 3}
       propertyPath: m_RootOrder
@@ -3386,15 +3386,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5085745769686734111, guid: 5a7b819f59c9e1d418152f57877c3549, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.00269
+      value: -0.00258
       objectReference: {fileID: 0}
     - target: {fileID: 5085745769686734111, guid: 5a7b819f59c9e1d418152f57877c3549, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0017
+      value: 0.00183
       objectReference: {fileID: 0}
     - target: {fileID: 5085745769686734111, guid: 5a7b819f59c9e1d418152f57877c3549, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.00048
+      value: 0.00062
       objectReference: {fileID: 0}
     - target: {fileID: 5085745769686734111, guid: 5a7b819f59c9e1d418152f57877c3549, type: 3}
       propertyPath: m_LocalRotation.w
