@@ -20,16 +20,7 @@ public class MainMenuStartGame : MonoBehaviour
 
     public void StartGame()
     {
-        if (PlayerPrefs.HasKey("savedLevelNumber"))
-        {
-            return;
-        }
-        else
-        {
-            PlayerPrefs.SetInt("savedLevelNumber",1);
-        }
-        Debug.Log("current saved level" + " " + PlayerPrefs.GetInt("savedLevelNumber"));
-
+        
         for (int i = 0; i < otherObjectToDeactivate.Length; i++)
         {
             otherObjectToDeactivate[i].SetActive(false);
@@ -44,6 +35,10 @@ public class MainMenuStartGame : MonoBehaviour
 
     public void LoadLevel()
     {
+        if (!PlayerPrefs.HasKey("savedLevelNumber"))
+        {
+            PlayerPrefs.SetInt("savedLevelNumber",1);
+        }
         SceneManager.LoadScene(PlayerPrefs.GetInt("savedLevelNumber"));
     }
 
