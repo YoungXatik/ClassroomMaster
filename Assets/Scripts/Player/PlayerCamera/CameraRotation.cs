@@ -28,7 +28,7 @@ public class CameraRotation : MonoBehaviour
         {
             dragging = false;
         }*/
-
+#if UNITY_ANDROID 
         if (Input.touchCount == 1)
         {
             dragging = true;
@@ -36,7 +36,19 @@ public class CameraRotation : MonoBehaviour
         else
         {
             dragging = false;
+        }     
+#endif
+#if UNITY_EDITOR
+        if (Input.GetMouseButton(0))
+        {
+            dragging = true;
         }
+        else if(Input.GetMouseButtonUp(0))
+        {
+            dragging = false;
+        }
+#endif
+        
 
         if (dragging)
         {
